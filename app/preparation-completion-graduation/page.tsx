@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { HeroBanner } from "@/components/ui/HeroBanner";
 import { GalleryGrid, GalleryItem } from "@/components/gallery/GalleryGrid";
-import { GraduationCap, Sparkles } from "lucide-react";
+import { GraduationCap, Sparkles, Trophy } from "lucide-react";
 
 export default function PreparationCompletionGraduationPage() {
   const galleryItems: GalleryItem[] = [
@@ -36,34 +36,20 @@ export default function PreparationCompletionGraduationPage() {
       {/* Main Container */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 space-y-20">
         
-        {/* Core Review Block */}
+        {/* Capstone Overview Section */}
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="bg-white dark:bg-[#1a1515] rounded-3xl p-8 sm:p-12 border border-gray-100 dark:border-gray-800 shadow-xl relative overflow-hidden"
+          className="relative overflow-hidden bg-white dark:bg-[#1a1515] rounded-3xl p-8 sm:p-12 border border-gray-100 dark:border-gray-800 shadow-xl"
         >
-          <div className="absolute top-0 left-0 w-2 h-full bg-[#d4af37]" />
+          <div className="absolute top-0 right-0 w-32 h-32 bg-[#d4af37]/10 rounded-bl-full pointer-events-none" />
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            {/* Title Column */}
-            <div className="lg:col-span-5 space-y-4">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#7b1113]/10 dark:bg-[#d4af37]/10 text-[#7b1113] dark:text-[#d4af37] text-xs font-bold uppercase tracking-wider">
-                <GraduationCap className="w-4 h-4" />
-                <span>Academic Readiness</span>
-              </div>
-              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight">
-                Finalizing the Pre-Service Educator Credentials
-              </h2>
-              <div className="w-16 h-1.5 bg-gradient-to-r from-[#7b1113] to-[#d4af37] rounded-full mt-2" />
-            </div>
-
-            {/* Narrative Column */}
-            <div className="lg:col-span-7 space-y-5 text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed font-sans">
-              <p>
-                During the preparation for the Recognition and graduation rites. The BSED Social Studies 1 students are responsible in arranging flowers, cutting decorative letters, and helping designing the stage to ensure a visually appealing venue for the success of the event. After the preparation, snacks were later distributed to facilitators, that serves as a token of appreciation for their efforts. This experience symbolize the importance of teamwork, creativity, and cooperation to create a such wonderful and meaningful venue for the students of Bulacao National High School.
-              </p>
-            </div>
+          <div className="relative z-10 flex flex-col gap-8 lg:gap-10">
+           
+            <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed font-sans">
+            During the preparation for the Recognition and graduation rites. The <strong className="text-[#7b1113] dark:text-[#d4af37]">BSED Social Studies 1</strong> students are responsible in  <strong className="text-[#7b1113] dark:text-[#d4af37]">arranging flowers</strong>, <strong className="text-[#7b1113] dark:text-[#d4af37]">cutting decorative letters</strong>, and <strong className="text-[#7b1113] dark:text-[#d4af37]">helping designing the stage</strong> to ensure a visually appealing venue for the success of the event. After the preparation, snacks were later distributed to facilitators, that serves as a token of appreciation for their efforts. This experience symbolize the importance of <strong className="text-[#7b1113] dark:text-[#d4af37]">teamwork</strong>, <strong className="text-[#7b1113] dark:text-[#d4af37]">creativity</strong>, and <strong className="text-[#7b1113] dark:text-[#d4af37]">cooperation</strong> to create a such wonderful and meaningful venue for the students of <strong className="text-[#7b1113] dark:text-[#d4af37]">Bulacao National High School</strong>.
+            </p>
           </div>
         </motion.section>
 

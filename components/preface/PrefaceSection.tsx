@@ -33,10 +33,7 @@ export function PrefaceSection() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#d4af37]/20 text-[#f3e5ab] text-xs font-bold uppercase tracking-widest mb-3">
-            <Sparkles className="w-3.5 h-3.5 text-[#d4af37]" />
-            <span>Guiding Principles</span>
-          </div>
+         
           <h2 className="font-serif text-4xl sm:text-5xl font-extrabold tracking-tight">
             Preface & Overview
           </h2>
@@ -45,41 +42,6 @@ export function PrefaceSection() {
 
         {/* Main content: single column, top to bottom */}
         <div className="flex flex-col gap-12 lg:gap-14 max-w-3xl mx-auto w-full">
-
-          {/* Quote panel */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="relative w-full pb-8"
-          >
-            <div className="glass-panel-maroon rounded-2xl p-8 shadow-2xl relative overflow-hidden">
-              <Quote className="absolute -bottom-6 -right-6 w-32 h-32 text-white/5 transform -rotate-12 pointer-events-none" />
-
-              <div className="space-y-6 relative z-10">
-                <Compass className="w-10 h-10 text-[#f3e5ab]" />
-
-                <blockquote className="font-serif text-lg sm:text-xl leading-relaxed italic text-white/95">
-                  &ldquo;The true essence of education transcends academic brilliance; it is deeply rooted in our constant aspiration to live out our core national heritage and moral responsibility.&rdquo;
-                </blockquote>
-
-                <div className="pt-4 border-t border-white/20">
-                  <span className="font-serif font-bold text-base text-[#f3e5ab] block">
-                    M.A.K.A. E-Portfolio
-                  </span>
-                  <span className="text-xs text-white/70 block">
-                    Literacy Training Service Blueprint
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Absolute badge overlay */}
-            <div className="absolute -bottom-5 left-6 px-4 py-2 rounded-lg bg-[#d4af37] text-[#1a1515] font-bold text-xs shadow-lg uppercase tracking-wider">
-              Bicol University 2026
-            </div>
-          </motion.div>
 
           {/* Overview copy + link cards */}
           <motion.div

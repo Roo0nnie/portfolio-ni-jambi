@@ -35,46 +35,7 @@ export default function MakaKalikasanPage() {
 
       {/* Main Container */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
-        
-        {/* Themed Intro banner mixing green, gold, and maroon */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="bg-gradient-to-r from-[#1a1515] via-[#1b3b22] to-[#580a0b] text-white rounded-2xl p-8 sm:p-12 shadow-xl mb-16 relative overflow-hidden"
-        >
-          <div className="absolute top-0 right-0 p-6 opacity-15">
-            <Sprout className="w-40 h-40 text-[#f3e5ab]" />
-          </div>
-
-          <div className="max-w-3xl relative z-10 space-y-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#d4af37]/20 text-[#f3e5ab] text-xs font-bold uppercase tracking-wider">
-              <TreePine className="w-3.5 h-3.5" />
-              <span>Environmental Duty</span>
-            </div>
-
-            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white">
-              Sustaining the Habitat for Future Learners
-            </h2>
-
-            <p className="text-sm sm:text-base text-white/90 leading-relaxed font-sans">
-              To adhere to the core value of being Maka-Kalikasan is to recognize that cognitive growth requires clean, secure, and thriving natural environments. Our batch leads by example, embedding environmental care directly into primary teaching scripts.
-            </p>
-          </div>
-        </motion.section>
-
         <section className="mb-20">
-          <div className="text-center max-w-xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#7b1113] dark:text-[#d4af37] block mb-2">
-              Immersion Highlights
-            </span>
-            <h3 className="font-serif text-3xl font-bold text-gray-900 dark:text-white flex items-center justify-center gap-2">
-              <HeartHandshake className="w-6 h-6 text-[#7b1113] dark:text-[#d4af37]" />
-              <span>Maka-Kalikasan Immersion</span>
-            </h3>
-            <div className="w-12 h-1 bg-[#7b1113] dark:bg-[#d4af37] mx-auto mt-3 rounded-full" />
-          </div>
-
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

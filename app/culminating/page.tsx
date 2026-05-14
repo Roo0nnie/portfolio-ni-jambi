@@ -51,10 +51,6 @@ export default function CulminatingPage() {
                 <Trophy className="w-4 h-4" />
                 <span>Program Culmination</span>
               </div>
-              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight">
-                Honoring Dedicated Immersion Outcomes
-              </h2>
-              <div className="w-16 h-1.5 bg-gradient-to-r from-[#7b1113] to-[#d4af37] rounded-full mt-2" />
             </div>
 
             <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed font-sans">

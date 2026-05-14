@@ -35,40 +35,7 @@ export default function MakaBansaPage() {
 
       {/* Main Container */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
-        
-        {/* Intro banner */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="bg-white dark:bg-[#1a1515] rounded-2xl p-8 sm:p-12 border border-gray-100 dark:border-gray-800 shadow-md mb-16 text-center max-w-4xl mx-auto space-y-4"
-        >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#7b1113]/10 text-[#7b1113] dark:bg-[#d4af37]/10 dark:text-[#d4af37] text-xs font-bold uppercase tracking-wider">
-            <Landmark className="w-3.5 h-3.5" />
-            <span>Civic Allegiance</span>
-          </div>
-          
-          <h2 className="font-serif text-3xl font-bold text-gray-900 dark:text-white">
-            Rooting Pedagogy in Authentic Patriotism
-          </h2>
-
-          <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed font-sans max-w-2xl mx-auto">
-            As future Social Studies educators, upholding the Maka-Bansa core value represents our direct professional legacy. We are not just instructing reading protocols; we are actively forming informed, responsible, and nation-loving citizens.
-          </p>
-        </motion.section>
-
         <section className="mb-20">
-          <div className="text-center max-w-xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#7b1113] dark:text-[#d4af37] block mb-2">
-              Immersion Highlights
-            </span>
-            <h3 className="font-serif text-3xl font-bold text-gray-900 dark:text-white flex items-center justify-center gap-2">
-              <Flag className="w-6 h-6 text-[#7b1113] dark:text-[#d4af37]" />
-              <span>Maka-Bansa Immersion</span>
-            </h3>
-            <div className="w-12 h-1 bg-[#7b1113] dark:bg-[#d4af37] mx-auto mt-3 rounded-full" />
-          </div>
-
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

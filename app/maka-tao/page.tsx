@@ -35,38 +35,7 @@ export default function MakaTaoPage() {
 
       {/* Main Container */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
-        
-        {/* Intro Section */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center max-w-3xl mx-auto mb-16 space-y-4"
-        >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#7b1113]/10 text-[#7b1113] dark:bg-[#d4af37]/10 dark:text-[#d4af37] text-xs font-bold uppercase tracking-wider">
-            <Users className="w-3.5 h-3.5" />
-            <span>Civic Empathy & Outreach</span>
-          </div>
-          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
-            Serving the Community through Literacy
-          </h2>
-          <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed font-sans">
-            The Maka-Tao core value asserts that authentic education honors human equality and proactive community stewardship. By investing hours in targeted diagnostic assessments and continuous guidance, our batch embodies deep civic care.
-          </p>
-        </motion.section>
-
         <section className="mb-20">
-          <div className="text-center max-w-xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#7b1113] dark:text-[#d4af37] block mb-2">
-              Immersion Highlights
-            </span>
-            <h3 className="font-serif text-3xl font-bold text-gray-900 dark:text-white flex items-center justify-center gap-2">
-              <HeartHandshake className="w-6 h-6 text-[#7b1113] dark:text-[#d4af37]" />
-              <span>Maka-Tao Immersion</span>
-            </h3>
-            <div className="w-12 h-1 bg-[#7b1113] dark:bg-[#d4af37] mx-auto mt-3 rounded-full" />
-          </div>
-
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

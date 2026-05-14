@@ -21,7 +21,6 @@ export function StudentProfileSection() {
       "Technical Committee",
       "Facilitator",
       "Preparation for the Graduation",
-      "Master of the Ceremony",
       "Cleaning the Gardern",
       "Designing the Garden"
     ],
@@ -44,9 +43,7 @@ export function StudentProfileSection() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <span className="text-xs font-bold uppercase tracking-widest text-[#7b1113] dark:text-[#d4af37] block mb-2">
-            Curriculum Vitae
-          </span>
+      
           <h2 className="font-serif text-4xl sm:text-5xl font-bold text-[#1a1515] dark:text-white relative inline-block pb-4">
             Student Profile
             <span className="absolute bottom-0 left-1/4 right-1/4 h-1 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent" />
@@ -142,7 +139,7 @@ export function StudentProfileSection() {
 
               {/* Core Skills Summary */}
               <div className="glass-panel rounded-xl p-5 border-l-4 border-l-[#7b1113] hover:-translate-y-1 transition-transform duration-300">
-                <h4 className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Core Expertise</h4>
+                <h4 className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Activities Handled</h4>
                 <div className="flex flex-wrap gap-1.5">
                   {studentData.skills.map((skill, index) => (
                     <span

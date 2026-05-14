@@ -50,53 +50,9 @@ export default function MakaDiyosPage() {
       {/* Main Container */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
 
-        {/* Quote & Reflection Introduction Section */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="bg-gradient-to-br from-[#1a1515] to-[#580a0b] text-white rounded-2xl p-8 sm:p-12 shadow-xl mb-16 relative overflow-hidden"
-        >
-          <div className="absolute top-0 right-0 p-8 opacity-10">
-            <Compass className="w-48 h-48 text-[#d4af37]" />
-          </div>
-
-          <div className="max-w-3xl relative z-10 space-y-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#d4af37]/20 text-[#f3e5ab] text-xs font-bold uppercase tracking-wider">
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>Core Spiritual Identity</span>
-            </div>
-
-            <blockquote className="font-serif text-2xl sm:text-3xl font-bold leading-snug text-[#f3e5ab]">
-              &ldquo;To be Maka-Diyos is to acknowledge that all pedagogical wisdom flows from compassion, honesty, and divine truth.&rdquo;
-            </blockquote>
-
-            <p className="text-sm sm:text-base text-white/90 leading-relaxed font-sans">
-              Within the Literacy Training Service framework of Bicol University, spiritual formation forms the baseline of our service ethics. We prepare instructional content not for personal accolades, but as an honest stewardship of the intellectual faculties entrusted to us.
-            </p>
-
-            <div className="pt-4 border-t border-white/20 flex items-center gap-3">
-              <BookHeart className="w-5 h-5 text-[#d4af37]" />
-              <span className="text-xs font-mono text-white/70 uppercase tracking-widest">
-                NSTP-LTS Component Standard
-              </span>
-            </div>
-          </div>
-        </motion.section>
-
         {/* Replaced Component Segment: Moral & Ethical Engagements */}
         <section className="mb-20">
-          <div className="text-center max-w-xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#7b1113] dark:text-[#d4af37] block mb-2">
-              Immersion Highlights
-            </span>
-            <h3 className="font-serif text-3xl font-bold text-gray-900 dark:text-white flex items-center justify-center gap-2">
-              <HeartHandshake className="w-6 h-6 text-[#7b1113] dark:text-[#d4af37]" />
-              <span>Moral &amp; Ethical Engagements</span>
-            </h3>
-            <div className="w-12 h-1 bg-[#7b1113] dark:bg-[#d4af37] mx-auto mt-3 rounded-full" />
-          </div>
-
+      
           {/* Premium Presentation Panel for the Authentic Student Narrative */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
