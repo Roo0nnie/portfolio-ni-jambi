@@ -10,17 +10,15 @@ export default function AssistingStudentsPage() {
   const galleryItems: GalleryItem[] = [
     {
       id: "ast-gal-1",
-      src: "/images/gallery/community.png",
-      title: "Interactive Game Protocols",
+      src: "/images/gallery/ASSISTING-1.jpeg",
+      title: "Picture taking with them",
       category: "Mentorship",
-      description: "Pre-service teachers directing group problem-solving exercises with utmost dedication and warmth.",
     },
     {
       id: "ast-gal-2",
-      src: "/images/hero/hero-bg.png",
-      title: "One-on-One Literacy Coaching",
+      src: "/images/gallery/ASSISTING-2.jpeg",
+      title: "Picture taking with the students",
       category: "Instruction",
-      description: "Providing focused curricular attention to bridge comprehension gaps and build student self-esteem.",
     },
   ];
 

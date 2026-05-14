@@ -10,17 +10,21 @@ export default function MakaBansaPage() {
   const galleryItems: GalleryItem[] = [
     {
       id: "mb-gal-1",
-      src: "/images/hero/hero-bg.png",
-      title: "Civic Leadership Assembly",
+      src: "/images/gallery/MAKABANSA-3.jpeg",
+      title: "Discussion abotu the topic",
       category: "Patriotism",
-      description: "Official documentation portrait of passionate BEd Social Studies student leaders embodying the core national spirit.",
     },
     {
       id: "mb-gal-2",
-      src: "/images/hero/preface-bg.png",
-      title: "History Curriculum Integration",
+      src: "/images/gallery/MAKABANSA-2.jpeg",
+      title: "The M.A.K.A- Bansa team",
       category: "Heritage",
-      description: "Reviewing comprehensive regional Bicol history files inside the university archive prior to public dissemination.",
+    },
+    {
+      id: "mb-gal-3",
+      src: "/images/gallery/MAKABANSA-1.jpeg",
+      title: "Reward station",
+      category: "Patriotism",
     },
   ];
 

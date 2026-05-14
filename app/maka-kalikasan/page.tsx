@@ -10,18 +10,22 @@ export default function MakaKalikasanPage() {
   const galleryItems: GalleryItem[] = [
     {
       id: "mk-gal-1",
-      src: "/images/gallery/community.png",
-      title: "Green Community Tree Planting Protocol",
+      src: "/images/gallery/MAKAKALIKASAN-1.jpeg",
+      title: "Tree planting activities",
       category: "Stewardship",
-      description: "Enthusiastic university student leaders actively planting native seedlings during the environmental integration program.",
     },
-    {
-      id: "mk-gal-2",
-      src: "/images/hero/hero-bg.png",
-      title: "Eco-Advocacy Seminar Panel",
-      category: "Curriculum",
-      description: "Instructing basic education pupils on clean local habitats and the collective responsibility of environmental stewardship.",
-    },
+      {
+        id: "mk-gal-2",
+        src: "/images/gallery/MAKAKALIKASAN-2.jpeg",
+        title: "The M.A.K.A- Kalikasan team",
+        category: "Curriculum",
+      },
+      {
+        id: "mk-gal-3",
+        src: "/images/gallery/MAKAKALIKASAN-3.jpg",
+        title: "Transplanting activity",
+        category: "Curriculum",
+      },
   ];
 
   return (

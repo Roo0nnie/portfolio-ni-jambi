@@ -4,31 +4,34 @@ import React from "react";
 import { motion } from "framer-motion";
 import { HeroBanner } from "@/components/ui/HeroBanner";
 import { GalleryGrid, GalleryItem } from "@/components/gallery/GalleryGrid";
-import { Sparkles, Play, Heart, Award, Users, Mic } from "lucide-react";
+import { Sparkles, Heart, Award, Users, Mic } from "lucide-react";
 
 export default function KickoffPage() {
 
   const galleryItems: GalleryItem[] = [
     {
       id: "ko-gal-1",
-      src: "/images/gallery/community.png",
-      title: "Bulacao Immersion Orientation",
+      src: "/images/gallery/KICKOFF-1.jpg",
+      title: "Picture taking together with The Kindness Station (TKS)",
       category: "Engagement",
-      description: "Fostering collaboration and warmth among the Grade 8 Matapat and Masipag students during interactive games.",
     },
     {
       id: "ko-gal-2",
-      src: "/images/hero/hero-bg.png",
-      title: "Inspirational Program Flow",
+      src: "/images/gallery/KICKOFF-2.jpg",
+      title: "Attendance",
       category: "Leadership",
-      description: "Delivering educational milestones and setting active values formation inside the local high school venue.",
     },
     {
       id: "ko-gal-3",
-      src: "/images/hero/preface-bg.png",
-      title: "Assembling & Venue Cleanup",
+      src: "/images/gallery/KICKOFF-3.jpg",
+      title: "Face painting made By TKS",
       category: "Stewardship",
-      description: "Demonstrating true Maka-Kalikasan and Maka-Tao responsibilities by restoring and organizing the school spaces post-event.",
+    },
+    {
+      id: "ko-gal-4",
+      src: "/images/gallery/KICKOFF-4.jpg",
+      title: "Snacks for students, guests, and facilitator",
+      category: "Stewardship",
     },
   ];
 
@@ -127,41 +130,6 @@ export default function KickoffPage() {
             </div>
           </div>
         </motion.section>
-
-        {/* Cinematic Video Highlight Reel Placeholder */}
-        <section>
-          <div className="bg-white dark:bg-[#1a1515] rounded-3xl p-8 sm:p-12 text-center border border-gray-100 dark:border-gray-800 shadow-sm space-y-6">
-            <div className="max-w-2xl mx-auto space-y-3">
-              <span className="text-xs font-bold uppercase tracking-widest text-[#7b1113] dark:text-[#d4af37] block">
-                Multimedia Recaps
-              </span>
-              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white flex items-center justify-center gap-2">
-                <Mic className="w-5 h-5 text-[#7b1113] dark:text-[#d4af37]" />
-                <span>Kick Off Documentary Reel</span>
-              </h3>
-              <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400">
-                Capturing real-time student interaction loops, creative face painting stations, and local stakeholder perspectives.
-              </p>
-            </div>
-
-            {/* Custom Video Mock Player Container */}
-            <div className="max-w-3xl mx-auto aspect-video rounded-2xl bg-gradient-to-tr from-gray-900 via-black to-gray-900 border-2 border-gray-800 shadow-2xl flex flex-col items-center justify-center p-6 group cursor-pointer hover:border-[#d4af37] transition-all relative overflow-hidden">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(212,175,55,0.1),transparent)]" />
-
-              <div className="w-16 h-16 rounded-full bg-[#d4af37] text-[#580a0b] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform mb-3 z-10">
-                <Play className="w-6 h-6 ml-1 fill-[#580a0b]" />
-              </div>
-
-              <span className="text-xs font-mono text-[#f3e5ab] block z-10 tracking-wider">
-                [ Click to Play High-Definition Recap ]
-              </span>
-
-              <span className="text-[10px] text-gray-400 block mt-1 z-10">
-                Total Runtime: 04m:15s | Stereo Audio Track Enabled
-              </span>
-            </div>
-          </div>
-        </section>
 
         {/* Gallery Showcase Section */}
         <section className="pb-12">

@@ -10,17 +10,21 @@ export default function MakaDiyosPage() {
   const galleryItems: GalleryItem[] = [
     {
       id: "md-gal-1",
-      src: "/images/hero/preface-bg.png",
-      title: "Campus Thanksgiving Invocation",
+      src: "/images/gallery/MAKADIYOS-1.jpeg",
+      title: "Discussion about Maka-Diyos",
       category: "Spiritual Action",
-      description: "Students leading the inter-faith prayers and campus blessing protocols prior to literacy immersion deployment.",
     },
     {
       id: "md-gal-2",
-      src: "/images/hero/hero-bg.png",
-      title: "Ethical & Moral Formation Seminars",
+      src: "/images/gallery/MAKADIYOS-2.jpeg",
+      title: "Rewards Station",
       category: "Reflection",
-      description: "Group discussions focusing on integrity, professional responsibility, and spiritual foundation as aspiring educators.",
+    },
+    {
+      id: "md-gal-3",
+      src: "/images/gallery/MAKADIYOS-3.jpeg",
+      title: "M.A.K.A-Diyos team",
+      category: "Spiritual Action",
     },
   ];
 

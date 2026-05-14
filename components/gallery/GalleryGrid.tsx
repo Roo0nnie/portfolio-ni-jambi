@@ -10,7 +10,6 @@ export interface GalleryItem {
   src: string;
   title: string;
   category: string;
-  description?: string;
 }
 
 interface GalleryGridProps {
@@ -63,11 +62,7 @@ export function GalleryGrid({ items }: GalleryGridProps) {
                 <h4 className="font-serif font-bold text-base text-gray-900 dark:text-white group-hover:text-[#7b1113] dark:group-hover:text-[#d4af37] transition-colors">
                   {item.title}
                 </h4>
-                {item.description && (
-                  <p className="mt-1 text-xs text-gray-500 dark:text-gray-400 line-clamp-2">
-                    {item.description}
-                  </p>
-                )}
+               
               </div>
               <div className="mt-3 pt-2 border-t border-gray-50 dark:border-gray-800/50 flex items-center justify-between">
                 <span className="text-[10px] text-gray-400 uppercase tracking-widest font-mono">
@@ -135,9 +130,7 @@ export function GalleryGrid({ items }: GalleryGridProps) {
                     {selectedImage.title}
                   </h3>
                   <div className="h-0.5 w-12 bg-[#d4af37]" />
-                  <p className="text-sm text-gray-300 leading-relaxed">
-                    {selectedImage.description || "Active community milestone documented under the National Service Training Program / Literacy Training Service of Bicol University Gubat Campus."}
-                  </p>
+                 
                 </div>
 
                 <div className="pt-6 border-t border-white/10 mt-6 text-xs text-gray-400 flex items-center justify-between">

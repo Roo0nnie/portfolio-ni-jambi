@@ -10,17 +10,21 @@ export default function MakaTaoPage() {
   const galleryItems: GalleryItem[] = [
     {
       id: "mt-gal-1",
-      src: "/images/gallery/community.png",
-      title: "Civic Literacy Collaboration",
+      src: "/images/gallery/MAKATAO-1.jpeg",
+      title: "Preparing for the snack",
       category: "Mentorship",
-      description: "Student teachers interacting warmly with primary pupils, bridging basic literacy deficits with dynamic visual storytelling.",
     },
     {
       id: "mt-gal-2",
-      src: "/images/hero/hero-bg.png",
-      title: "Siklab Batch Planning Meeting",
+      src: "/images/gallery/MAKATAO-2.jpg",
+      title: "The M.A.K.A- Tao team",
       category: "Teamwork",
-      description: "Consolidating curriculum materials and delegating teaching stations to ensure optimal teacher-to-student coverage.",
+    },
+    {
+      id: "mt-gal-3",
+      src: "/images/gallery/MAKATAO-3.jpeg",
+      title: "Instructional Materials",
+      category: "Mentorship",
     },
   ];
 

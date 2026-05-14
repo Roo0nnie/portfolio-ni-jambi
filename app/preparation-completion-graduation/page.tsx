@@ -10,17 +10,39 @@ export default function PreparationCompletionGraduationPage() {
   const galleryItems: GalleryItem[] = [
     {
       id: "prep-gal-1",
-      src: "/images/hero/preface-bg.png",
-      title: "Portfolio Archiving",
+      src: "/images/gallery/Preparation-6.jpg",
+      title: "Stage Decoration",
       category: "Documentation",
-      description: "Compiling verified literacy training reports and signed stakeholder evaluations prior to academic submission.",
     },
     {
       id: "prep-gal-2",
-      src: "/images/hero/hero-bg.png",
-      title: "Pre-Graduation Assessment",
+      src: "/images/gallery/Preparation-5.jpg",
+      title: "Materials Preparatin & Gathering",
       category: "Milestone",
-      description: "Final pre-service pedagogical review loop affirming complete readiness for professional instruction paths.",
+    },
+    {
+      id: "prep-gal-3",
+      src: "/images/gallery/Preparation-4.jpg",
+      title: "Picture taking",
+      category: "Documentation",
+    },
+    {
+        id: "prep-gal-4",
+      src: "/images/gallery/Preparation-3.jpg",
+      title: "Chairs Arrangement",
+      category: "Milestone",
+    },
+    {
+      id: "prep-gal-5",
+      src: "/images/gallery/Preparation-2.jpg",
+      title: "Snacks Distribution & Preparation",
+      category: "Documentation",
+    },
+    {
+      id: "prep-gal-6",
+      src: "/images/gallery/Preparation-1.jpg",
+      title: "Setting up & Planning",
+      category: "Milestone",
     },
   ];
 
@@ -61,7 +83,7 @@ export default function PreparationCompletionGraduationPage() {
             </span>
             <h3 className="font-serif text-3xl font-bold text-gray-900 dark:text-white flex items-center justify-center gap-2">
               <Sparkles className="w-5 h-5 text-[#d4af37]" />
-              <span>Completion Documentation Gallery</span>
+              <span>Documentation Gallery</span>
             </h3>
             <div className="w-12 h-1 bg-[#d4af37] mx-auto rounded-full" />
           </div>

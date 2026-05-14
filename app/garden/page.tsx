@@ -10,17 +10,33 @@ export default function GardenPage() {
   const galleryItems: GalleryItem[] = [
     {
       id: "gar-gal-1",
-      src: "/images/hero/hero-bg.png",
-      title: "School Bio-Intensive Gardening",
+      src: "/images/gallery/GARDEN-1.jpg",
+      title: "Tree Planting",
       category: "Stewardship",
-      description: "Pre-service educators installing sustainable plot structures to promote long-term nutritional independence.",
     },
     {
       id: "gar-gal-2",
-      src: "/images/hero/preface-bg.png",
-      title: "Ecological Landscaping &amp; Cleanup",
+      src: "/images/gallery/GARDEN-2.jpg",
+      title: "Picture taking with the students",
       category: "Restoration",
-      description: "Beautifying the outer perimeters of Bulacao National High School with resilient regional flora species.",
+    },
+    {
+      id: "gar-gal-3",
+      src: "/images/gallery/GARDEN-3.jpg",
+      title: "Helping each other for the garden",
+      category: "Stewardship",
+    },
+    {
+      id: "gar-gal-4",
+      src: "/images/gallery/GARDEN-4.jpg",
+      title: "Growing Plants",
+      category: "Restoration",
+    },
+    {
+      id: "gar-gal-5",
+      src: "/images/gallery/GARDEN-5.jpg",
+      title: "Cleaning the area",
+      category: "Stewardship",
     },
   ];
 
@@ -28,7 +44,7 @@ export default function GardenPage() {
     <main className="flex-1 w-full flex flex-col pb-24">
       {/* Hero Banner */}
       <HeroBanner
-        title="School Garden"
+        title="Garden's Gallery"
         subtitle="Cultivating green pedagogical spaces, bio-intensive gardening initiatives, and localized ecological resilience."
         imageSrc="/images/hero/hero-bg.png"
       />
@@ -60,7 +76,7 @@ export default function GardenPage() {
             </span>
             <h3 className="font-serif text-3xl font-bold text-gray-900 dark:text-white flex items-center justify-center gap-2">
               <Sparkles className="w-5 h-5 text-[#d4af37]" />
-              <span>Garden Landscaping Photo Roster</span>
+              <span>Garden's Gallery</span>
             </h3>
             <div className="w-12 h-1 bg-[#d4af37] mx-auto rounded-full" />
           </div>

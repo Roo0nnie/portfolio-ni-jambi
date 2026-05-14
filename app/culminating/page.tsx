@@ -4,23 +4,63 @@ import React from "react";
 import { motion } from "framer-motion";
 import { HeroBanner } from "@/components/ui/HeroBanner";
 import { GalleryGrid, GalleryItem } from "@/components/gallery/GalleryGrid";
-import { Sparkles, Trophy } from "lucide-react";
+import { Sparkles, Trophy, Film } from "lucide-react";
 
 export default function CulminatingPage() {
   const galleryItems: GalleryItem[] = [
     {
       id: "cul-gal-1",
-      src: "/images/gallery/community.png",
-      title: "Culminating Ceremonies",
+      src: "/images/gallery/Culminating-1.jpg",
+      title: "Awarding for Best In M.A.K.A- Diyos",
       category: "Celebration",
-      description: "Official capstone documentation highlighting student participants, community stakeholders, and local facilitators.",
     },
     {
       id: "cul-gal-2",
-      src: "/images/hero/hero-bg.png",
-      title: "Awarding of Certifications",
+      src: "/images/gallery/Culminating-2.jpg",
+      title: "Interactive games for student",
       category: "Recognition",
-      description: "Distributing customized certificates of completion and simple tokens of gratitude to our active learners.",
+    },
+    {
+      id: "cul-gal-3",
+      src: "/images/gallery/Culminating-3.jpg",
+      title: "Photo opportunity (M.A.K.A-Diyos)",
+      category: "Celebration",
+    },
+    {
+      id: "cul-gal-4",
+      src: "/images/gallery/Culminating-4.jpg",
+      title: "The opening segment",
+      category: "Recognition",
+    },
+    {
+      id: "cul-gal-5",
+      src: "/images/gallery/Culminating-5.jpeg",
+      title: "Warm message given by the student",
+      category: "Celebration",
+    },
+    {
+      id: "cul-gal-6",
+      src: "/images/gallery/Culminating-6.jpeg",
+      title: "Photo opportunity of BSED SS 1",
+      category: "Recognition",
+    },
+    {
+      id: "cul-gal-7",
+      src: "/images/gallery/Culminating-7.jpeg",
+      title: "M.A.K.A design",
+      category: "Celebration",
+    },
+    {
+      id: "cul-gal-8",
+      src: "/images/gallery/Culminating-8.jpeg",
+      title: "Simple token of appreciation",
+      category: "Recognition",
+    },
+    {
+      id: "cul-gal-9",
+      src: "/images/gallery/Culminating-9.jpeg",
+      title: "Prizes",
+      category: "Celebration",
     },
   ];
 
