@@ -4,22 +4,13 @@ import React from "react";
 
 import { motion } from "framer-motion";
 import { HeroBanner } from "@/components/ui/HeroBanner";
-import { Heart, Award, Sparkles, UserCheck } from "lucide-react";
+import { Heart, Award } from "lucide-react";
 
 export default function AcknowledgementPage() {
   const officers = [
-    { name: "Prof. Eduardo R. de Leon", role: "NSTP / LTS Coordinator", desc: "For unwavering mentorship and academic oversight." },
-    { name: "Dr. Ma. Teresa V. Santos", role: "Dean, Gubat Campus", desc: "For inspiring visionary leadership and regional service." },
-    { name: "Mr. Juanito B. Perez", role: "Social Studies Adviser", desc: "For instilling deep pedagogical foundations in history." },
-  ];
-
-  const contributors = [
-    "Group 1 — Siklab Members",
-    "BEd Social Studies 1 Classmates",
-    "Gubat Community Literacy Partners",
-    "Bicol University Student Council",
-    "Local Government Unit of Gubat",
-    "M.A.K.A Project Advisement Panel"
+    { name: "Prof. Gerry F. Guardian,", role: "NSTP / LTS Coordinator", desc: "For unwavering mentorship and academic oversight.", university: "Bicol University Gubat Campus" },
+    { name: "Ma'am Eleonora Polo, ", role: "School Head, BNHS", desc: "For inspiring visionary leadership and regional service.", university: "Bulacao National High School" },
+    { name: "Grade 8-Matapat/Masipag, ", role: "Student Participants", desc: "For enthusiastic engagement and active participation in the learning activities.", university: "Students" },
   ];
 
   return (
@@ -33,7 +24,7 @@ export default function AcknowledgementPage() {
 
       {/* Main Content Container */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
-        
+
         {/* Appreciation Message Section */}
         <motion.section
           initial={{ opacity: 0, y: 20 }}
@@ -42,21 +33,28 @@ export default function AcknowledgementPage() {
           className="bg-white dark:bg-[#1a1515] rounded-2xl p-8 sm:p-12 border border-gray-100 dark:border-gray-800 shadow-lg relative overflow-hidden mb-16"
         >
           <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-[#d4af37]/20 to-transparent rounded-bl-full pointer-events-none" />
-          
+
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <Heart className="w-12 h-12 text-[#7b1113] dark:text-[#d4af37] mx-auto fill-[#7b1113]/10 dark:fill-[#d4af37]/10" />
-            
+
             <h2 className="font-serif text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
               A Message of Sincere Appreciation
             </h2>
-            
             <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed font-sans">
+              The <strong className="text-[#7b1113] dark:text-[#d4af37]">BSED Social Studies 1</strong> would like to express their heartfelt gratitude to all the Individuals who contributed to the success of this event, including the <strong className="text-[#7b1113] dark:text-[#d4af37]">Bicol University Institution</strong> who grant authority and travel Order needed to formally conduct this Immersion. Special appreciation are also given to the <strong className="text-[#7b1113] dark:text-[#d4af37]">Bicol University Gubat Campus (BUGC)</strong> for allowing and supporting this kind of activities. BUGC become a helping hand of BSED Social Studies 1 when it comes to the preparation and approving all the Important documents and other academic requirements. Furthermore, BSED Social Studies 1 are sincerely grateful to their Instructor, <strong className="text-[#7b1113] dark:text-[#d4af37]">Sir Gerry F. Guardian</strong> for his unwavering guidance, encouragement, patience, and valuable advice throughout the entire immersion process. His dedication and supervision greatly contributed to the success of the activity. And also, to all the Student of BSED Social studies 1 who gave effort, knowledge, and dedication to implement this memorable and meaningful event. The BSED Social studies 1 really did an amazing immersion that helps students to understand the core values of being a Filipino.
+            </p>
+
+            <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed font-sans">
+              Moreover, to <strong className="text-[#7b1113] dark:text-[#d4af37]">Bulacao National High School</strong>, the BSED Social Studies 1 are very much thankful for giving the opportunity to conduct the immersion within their school community, as well as to the <strong className="text-[#7b1113] dark:text-[#d4af37]">Grade 8 Matapat and Masipag students</strong> for becoming a participants. Their involvement, participation, cooperation, and enthusiasm made the immersion more meaningful and successful. Lastly, to the <strong className="text-[#7b1113] dark:text-[#d4af37]">Almighty God</strong> who gave his endless guidance, wisdom, strength, protection, and blessing throughout the conduct of this event. Without this amazing Individual, Institution, and the guidance from Almighty God, the event will not be successful as it is.
+            </p>
+
+            {/* <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed font-sans">
               The completion of the <strong className="text-[#7b1113] dark:text-[#d4af37]">M.A.K.A. E-Portfolio System</strong> stands as a testament to collective endeavor, shared passion, and unyielding support. We extend our deepest gratitude to the Almighty God for providing wisdom, strength, and grace throughout this transformative academic journey.
             </p>
 
             <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed font-sans">
               To our esteemed professors, administrative officers, and community partners in Gubat, Sorsogon: your guidance has shaped not only our instructional frameworks but also our personal commitment to embodying the core Filipino values of being Maka-Diyos, Maka-Tao, Maka-Kalikasan, and Maka-Bansa.
-            </p>
+            </p> */}
           </div>
         </motion.section>
 
@@ -96,9 +94,9 @@ export default function AcknowledgementPage() {
                     {officer.desc}
                   </p>
                 </div>
-                
+
                 <div className="mt-6 pt-3 border-t border-gray-100 dark:border-gray-800 text-[10px] text-gray-400 uppercase tracking-widest">
-                  Bicol University Gubat
+                  {officer.university}
                 </div>
               </motion.div>
             ))}
@@ -106,10 +104,10 @@ export default function AcknowledgementPage() {
         </section>
 
         {/* Contributors Grid */}
-        <section className="mb-12">
+        {/* <section className="mb-12">
           <div className="bg-[#580a0b] rounded-2xl p-8 sm:p-12 text-white relative overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,175,55,0.15),transparent)]" />
-            
+
             <div className="relative z-10 max-w-4xl mx-auto text-center">
               <Sparkles className="w-8 h-8 text-[#f3e5ab] mx-auto mb-3 animate-spin-slow" />
               <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#f3e5ab] mb-2">
@@ -138,7 +136,7 @@ export default function AcknowledgementPage() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Thank You Footer Note */}
         <div className="text-center pt-6 border-t border-gray-200 dark:border-gray-800 text-xs text-gray-400">

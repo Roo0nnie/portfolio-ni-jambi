@@ -125,6 +125,10 @@ Combine:
 - Maka-Tao
 - Maka-Kalikasan
 - Maka-Bansa
+- Culminating
+- Preparation for Completion and Graduation
+- Assisting students
+- Garden
 
 ### Extra Features
 
@@ -411,6 +415,14 @@ src/
 │   │   └── page.tsx
 │   ├── maka-bansa/
 │   │   └── page.tsx
+│   ├── culminating/
+│   │   └── page.tsx
+│   ├── preparation-completion-graduation/
+│   │   └── page.tsx
+│   ├── assisting-students/
+│   │   └── page.tsx
+│   ├── garden/
+│   │   └── page.tsx
 │   └── layout.tsx
 │
 ├── components/
@@ -634,6 +646,10 @@ Create dedicated pages for:
 - Maka-Tao
 - Maka-Kalikasan
 - Maka-Bansa
+- Culminating
+- Preparation for Completion and Graduation
+- Assisting students
+- Garden
 
 Each page should:
 

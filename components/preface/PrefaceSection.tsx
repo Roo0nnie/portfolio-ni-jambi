@@ -9,7 +9,7 @@ import { Quote, Sparkles, Compass } from "lucide-react";
 export function PrefaceSection() {
   return (
     <section id="preface" className="relative py-32 overflow-hidden bg-[#1a1515] text-white">
-      
+
       {/* Background image overlay */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -24,7 +24,7 @@ export function PrefaceSection() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -45,7 +45,7 @@ export function PrefaceSection() {
 
         {/* Main Content Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
+
           {/* Left Decorative/Quote Graphic Panel */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
@@ -56,10 +56,10 @@ export function PrefaceSection() {
           >
             <div className="glass-panel-maroon rounded-2xl p-8 shadow-2xl relative overflow-hidden">
               <Quote className="absolute -bottom-6 -right-6 w-32 h-32 text-white/5 transform -rotate-12 pointer-events-none" />
-              
+
               <div className="space-y-6 relative z-10">
                 <Compass className="w-10 h-10 text-[#f3e5ab]" />
-                
+
                 <blockquote className="font-serif text-lg sm:text-xl leading-relaxed italic text-white/95">
                   &ldquo;The true essence of education transcends academic brilliance; it is deeply rooted in our constant aspiration to live out our core national heritage and moral responsibility.&rdquo;
                 </blockquote>
@@ -90,7 +90,7 @@ export function PrefaceSection() {
             className="lg:col-span-7"
           >
             <div className="bg-black/40 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-white/10 shadow-xl space-y-6">
-              
+
               <h3 className="font-serif text-2xl font-bold text-[#f3e5ab] flex items-center gap-2.5">
                 <span className="w-2.5 h-2.5 rounded-full bg-[#d4af37]" />
                 Adhering to the Filipino Core Values
@@ -98,6 +98,23 @@ export function PrefaceSection() {
 
               <div className="space-y-4 text-sm sm:text-base text-gray-300 leading-relaxed font-sans">
                 <p>
+                  This <strong className="text-white font-semibold">E-Portfolio</strong> covers the <em className="text-[#f3e5ab] font-medium">
+                    experiences</em>, <em className="text-[#f3e5ab] font-medium">
+                    learnings</em>, <em className="text-[#f3e5ab] font-medium">
+                    realization</em>, <em className="text-[#f3e5ab] font-medium">
+                    collaborations</em>, and <em className="text-[#f3e5ab] font-medium">
+                    achievements</em> of the <em className="text-[#f3e5ab] font-medium">
+                    Bachelor of Secondary Education (BSED) Major in Social Studies 1 students</em> of Bicol University Gubat Campus, as their requirements for the subject Literacy Training Service (LTS) under the National Service Training Program (NSTP). This activity highlights the implementation of the M.A.K.A Project: &ldquo;Made to Aspire Kabataan in Adhering to the Filipino Core Values&rdquo; and was participated by the Grade 8- Matapat/Masipag students of Bulacao National High School.
+                </p>
+                <p>
+                  <strong className="text-white font-semibold">M.A.K.A.</strong> —{" "}  <em className="text-[#f3e5ab] font-medium">
+                    Made to Aspire Kabataan in Adhering to the Filipino Core Values</em> a project designed to transfer information and guide the Grade 8 students about the four Filipino core values: MAKA-DIYOS, MAKA-TAO, MAKA-KALIKASAN, and MAKA-BANSA, that strengthen their understanding and awareness when it comes to the values of being a Filipino citizens. This program is not just merely about discussion, but it creates learning and experiences through engaging activities, entertainment, assessment, collaboration, and meaningful token of appreciation to students who become our source of success.
+                </p>
+
+                <p>
+                  Overall, this <strong className="text-white font-semibold">E-Portfolio</strong> reflects the commitment of the BSED Social Studies 1 to conduct a such wonderful and memorable events that are connected to the vision, mission, and goals of Bicol University Institution. It also serves as a documentation of their dedication, collaborative efforts, and meaningful contribution to the community through education and values formation.
+                </p>
+                {/* <p>
                   Welcome to the official electronic portfolio for the project{" "}
                   <strong className="text-white font-semibold">M.A.K.A.</strong> —{" "}
                   <em className="text-[#f3e5ab] font-medium">
@@ -107,7 +124,7 @@ export function PrefaceSection() {
 
                 <p>
                   As future educators majoring in Social Studies, we recognize that academic excellence must be complemented by the four essential pillars of the Filipino moral identity. Through rigorous reflection and civic engagement, this showcase explores our milestones across four distinct spheres:
-                </p>
+                </p> */}
 
                 {/* Highlight Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 pb-2">

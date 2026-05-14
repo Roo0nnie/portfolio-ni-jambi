@@ -3,38 +3,39 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { BookOpen, Award, Users, Star, Phone, Mail, CheckCircle2 } from "lucide-react";
+import { BookOpen, Award, Users, Star, Mail, CheckCircle2 } from "lucide-react";
 
 export function StudentProfileSection() {
   // Dummy data configuration
   const studentData = {
-    name: "Maria Angela K. Alvarez",
+    name: "Michelle F. Estillero",
     course: "Bachelor of Secondary Education Major in Social Studies 1",
     nstp: "National Service Training Program (Literacy Training Service)",
-    committee: "Academic & Literacy Committee",
-    makaGroup: "Group 1 — Siklab",
+    committee: "Technical Committee",
+    makaGroup: "Group 1 — Maka-Diyos",
     role: "Lead Student Documentarian & Creator",
-    email: "maka.alvarez@bicol-u.edu.ph",
-    contact: "+63 912 345 6789",
+    email: "michelleestillero90@gmail.com",
+    // contact: "+63 912 345 6789",
     skills: [
-      "Curriculum Development",
-      "Historical Research",
-      "Community Outreach",
-      "Digital Portfolio Design",
-      "Public Speaking",
-      "Literacy Instruction",
+      "Maka-Diyos Reporter",
+      "Technical Committee",
+      "Facilitator",
+      "Preparation for the Graduation",
+      "Master of the Ceremony",
+      "Cleaning the Gardern",
+      "Designing the Garden"
     ],
   };
 
   return (
     <section id="profile" className="py-24 bg-gradient-to-b from-white via-[#fdfbfb] to-[#f5f2f2] dark:from-[#0d0909] dark:to-[#151111] relative overflow-hidden">
-      
+
       {/* Decorative background vectors */}
       <div className="absolute top-1/2 right-0 w-96 h-96 bg-[#d4af37]/5 rounded-full blur-3xl -translate-y-1/2 pointer-events-none" />
       <div className="absolute bottom-0 left-10 w-72 h-72 bg-[#7b1113]/5 rounded-full blur-2xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Section Heading */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -57,7 +58,7 @@ export function StudentProfileSection() {
 
         {/* Two-Column Responsive Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
+
           {/* Left Side: Student Information */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -69,11 +70,11 @@ export function StudentProfileSection() {
             {/* Main Info Card */}
             <div className="glass-panel rounded-2xl p-6 sm:p-8 relative overflow-hidden transition-all duration-300 hover:shadow-xl">
               <div className="absolute top-0 left-0 w-2 h-full bg-[#7b1113]" />
-              
+
               <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#7b1113] dark:text-[#f3e5ab]">
                 {studentData.name}
               </h3>
-              
+
               <div className="mt-4 space-y-3 pt-4 border-t border-gray-100 dark:border-gray-800">
                 <div className="flex items-start gap-3">
                   <BookOpen className="w-5 h-5 text-[#d4af37] shrink-0 mt-0.5" />
@@ -109,17 +110,17 @@ export function StudentProfileSection() {
                   </div>
                 </div>
 
-                <div className="pt-2">
+                {/* <div className="pt-2">
                   <span className="inline-block px-3 py-1 rounded-md bg-[#7b1113]/10 dark:bg-[#d4af37]/10 text-[#7b1113] dark:text-[#f3e5ab] text-xs font-bold uppercase tracking-wider">
                     Role: {studentData.role}
                   </span>
-                </div>
+                </div> */}
               </div>
             </div>
 
             {/* Contact & Skills Cards Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              
+
               {/* Contact Card */}
               <div className="glass-panel rounded-xl p-5 border-l-4 border-l-[#d4af37] hover:-translate-y-1 transition-transform duration-300">
                 <h4 className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Contact Channels</h4>
@@ -132,10 +133,10 @@ export function StudentProfileSection() {
                     <Mail className="w-4 h-4 text-[#d4af37]" />
                     <span className="truncate">{studentData.email}</span>
                   </a>
-                  <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-700 dark:text-gray-300">
+                  {/* <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-700 dark:text-gray-300">
                     <Phone className="w-4 h-4 text-[#d4af37]" />
                     <span>{studentData.contact}</span>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
@@ -181,7 +182,7 @@ export function StudentProfileSection() {
                   priority
                   className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 />
-                
+
                 {/* Overlay highlight label */}
                 <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 text-center">
                   <span className="text-white font-serif font-medium text-sm block">

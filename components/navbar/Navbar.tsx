@@ -36,6 +36,10 @@ export function Navbar() {
     { name: "Maka-Tao", href: "/maka-tao", isHash: false, id: "nav-tao" },
     { name: "Maka-Kalikasan", href: "/maka-kalikasan", isHash: false, id: "nav-kalikasan" },
     { name: "Maka-Bansa", href: "/maka-bansa", isHash: false, id: "nav-bansa" },
+    { name: "Culminating", href: "/culminating", isHash: false, id: "nav-culminating" },
+    { name: "Preparation for Completion and Graduation", href: "/preparation-completion-graduation", isHash: false, id: "nav-prep" },
+    { name: "Assisting Students", href: "/assisting-students", isHash: false, id: "nav-assisting" },
+    { name: "Garden", href: "/garden", isHash: false, id: "nav-garden" },
   ];
 
   const isActive = (href: string, isHash: boolean) => {
