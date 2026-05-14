@@ -11,7 +11,7 @@ export default function MakaKalikasanPage() {
     {
       id: "mk-gal-1",
       src: "/images/gallery/MAKAKALIKASAN-1.jpeg",
-      title: "Tree planting activities",
+      title: "Tree Planting Activity",
       category: "Stewardship",
     },
       {
@@ -23,7 +23,7 @@ export default function MakaKalikasanPage() {
       {
         id: "mk-gal-3",
         src: "/images/gallery/MAKAKALIKASAN-3.jpg",
-        title: "Transplanting activity",
+        title: "Tree Planting Activity",
         category: "Curriculum",
       },
   ];
