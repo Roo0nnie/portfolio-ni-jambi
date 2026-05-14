@@ -175,7 +175,7 @@ export function StudentProfileSection() {
             <div className="relative z-10 w-72 h-80 sm:w-80 sm:h-96 rounded-2xl p-2.5 bg-gradient-to-b from-[#d4af37] via-[#f3e5ab] to-[#7b1113] shadow-2xl group">
               <div className="w-full h-full rounded-xl overflow-hidden relative bg-gray-900">
                 <Image
-                  src="/images/profile/student.png"
+                  src="/images/profile/student-1.png"
                   alt={studentData.name}
                   fill
                   sizes="(max-width: 768px) 100vw, 400px"

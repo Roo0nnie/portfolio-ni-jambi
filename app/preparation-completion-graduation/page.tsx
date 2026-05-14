@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { HeroBanner } from "@/components/ui/HeroBanner";
 import { GalleryGrid, GalleryItem } from "@/components/gallery/GalleryGrid";
-import { GraduationCap, Sparkles, CheckSquare, Award, FileText } from "lucide-react";
+import { GraduationCap, Sparkles } from "lucide-react";
 
 export default function PreparationCompletionGraduationPage() {
   const galleryItems: GalleryItem[] = [
@@ -61,37 +61,8 @@ export default function PreparationCompletionGraduationPage() {
             {/* Narrative Column */}
             <div className="lg:col-span-7 space-y-5 text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed font-sans">
               <p>
-                As the academic year draws to its close, comprehensive preparation for completion and graduation demands complete organizational clarity. This crucial phase guarantees that every hour spent instructing, guiding, and mentoring students maps perfectly to required professional benchmarks.
+                During the preparation for the Recognition and graduation rites. The BSED Social Studies 1 students are responsible in arranging flowers, cutting decorative letters, and helping designing the stage to ensure a visually appealing venue for the success of the event. After the preparation, snacks were later distributed to facilitators, that serves as a token of appreciation for their efforts. This experience symbolize the importance of teamwork, creativity, and cooperation to create a such wonderful and meaningful venue for the students of Bulacao National High School.
               </p>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-                <div className="p-4 rounded-xl bg-gray-50 dark:bg-[#221c1c] border border-gray-100 dark:border-gray-800 space-y-1.5">
-                  <div className="flex items-center gap-2 text-[#7b1113] dark:text-[#d4af37]">
-                    <CheckSquare className="w-4 h-4 shrink-0" />
-                    <span className="text-xs font-bold uppercase tracking-wider">Verification</span>
-                  </div>
-                  <p className="text-xs text-gray-600 dark:text-gray-400">
-                    Rigorous peer audits ensuring absolute fidelity of submitted community narrative timestamps.
-                  </p>
-                </div>
-
-                <div className="p-4 rounded-xl bg-gray-50 dark:bg-[#221c1c] border border-gray-100 dark:border-gray-800 space-y-1.5">
-                  <div className="flex items-center gap-2 text-[#7b1113] dark:text-[#d4af37]">
-                    <FileText className="w-4 h-4 shrink-0" />
-                    <span className="text-xs font-bold uppercase tracking-wider">Compilation</span>
-                  </div>
-                  <p className="text-xs text-gray-600 dark:text-gray-400">
-                    Consolidating lesson plans, graphic evaluations, and formal certifications into unified electronic repositories.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-3 text-xs sm:text-sm text-gray-500 dark:text-gray-400 border-t border-gray-100 dark:border-gray-800 pt-4">
-                <Award className="w-4 h-4 text-[#7b1113] dark:text-[#d4af37] shrink-0" />
-                <span>
-                  Preparing the pre-service candidate body to proudly transition from supervised student immersion to full certified field tenure.
-                </span>
-              </div>
             </div>
           </div>
         </motion.section>

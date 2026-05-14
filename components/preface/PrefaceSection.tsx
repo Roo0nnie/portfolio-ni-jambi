@@ -43,16 +43,16 @@ export function PrefaceSection() {
           <div className="w-20 h-1 bg-[#d4af37] mx-auto mt-4 rounded-full" />
         </motion.div>
 
-        {/* Main Content Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        {/* Main content: single column, top to bottom */}
+        <div className="flex flex-col gap-12 lg:gap-14 max-w-3xl mx-auto w-full">
 
-          {/* Left Decorative/Quote Graphic Panel */}
+          {/* Quote panel */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="lg:col-span-5 relative"
+            className="relative w-full pb-8"
           >
             <div className="glass-panel-maroon rounded-2xl p-8 shadow-2xl relative overflow-hidden">
               <Quote className="absolute -bottom-6 -right-6 w-32 h-32 text-white/5 transform -rotate-12 pointer-events-none" />
@@ -81,13 +81,13 @@ export function PrefaceSection() {
             </div>
           </motion.div>
 
-          {/* Right Side: Readable Content Card with Highlighted Keywords */}
+          {/* Overview copy + link cards */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="lg:col-span-7"
+            className="w-full"
           >
             <div className="bg-black/40 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-white/10 shadow-xl space-y-6">
 
@@ -126,8 +126,8 @@ export function PrefaceSection() {
                   As future educators majoring in Social Studies, we recognize that academic excellence must be complemented by the four essential pillars of the Filipino moral identity. Through rigorous reflection and civic engagement, this showcase explores our milestones across four distinct spheres:
                 </p> */}
 
-                {/* Highlight Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 pb-2">
+                {/* Highlight Grid — core values + immersion milestones */}
+                <div className="grid grid-cols-2 gap-3 pt-2 pb-2">
                   <Link
                     id="preface-link-diyos"
                     href="/maka-diyos"
@@ -171,10 +171,54 @@ export function PrefaceSection() {
                     </span>
                     <span className="text-xs text-gray-400 block mt-0.5">Patriotic leadership & identity</span>
                   </Link>
+
+                  <Link
+                    id="preface-link-culminating"
+                    href="/culminating"
+                    className="p-3 rounded-lg bg-white/5 border border-white/10 hover:border-[#d4af37] hover:bg-white/10 transition-all group"
+                  >
+                    <span className="font-serif font-bold text-[#d4af37] block group-hover:translate-x-1 transition-transform">
+                      Culminating
+                    </span>
+                    <span className="text-xs text-gray-400 block mt-0.5">Capstone celebration & program closure</span>
+                  </Link>
+
+                  <Link
+                    id="preface-link-assisting-students"
+                    href="/assisting-students"
+                    className="p-3 rounded-lg bg-white/5 border border-white/10 hover:border-[#d4af37] hover:bg-white/10 transition-all group"
+                  >
+                    <span className="font-serif font-bold text-[#d4af37] block group-hover:translate-x-1 transition-transform">
+                      Assisting Students
+                    </span>
+                    <span className="text-xs text-gray-400 block mt-0.5">Ceremony support & learner engagement</span>
+                  </Link>
+
+                  <Link
+                    id="preface-link-preparation-graduation"
+                    href="/preparation-completion-graduation"
+                    className="p-3 rounded-lg bg-white/5 border border-white/10 hover:border-[#d4af37] hover:bg-white/10 transition-all group"
+                  >
+                    <span className="font-serif font-bold text-[#d4af37] block group-hover:translate-x-1 transition-transform">
+                      Preparation &amp; Graduation
+                    </span>
+                    <span className="text-xs text-gray-400 block mt-0.5">Completion rites & venue readiness</span>
+                  </Link>
+
+                  <Link
+                    id="preface-link-garden"
+                    href="/garden"
+                    className="p-3 rounded-lg bg-white/5 border border-white/10 hover:border-[#d4af37] hover:bg-white/10 transition-all group"
+                  >
+                    <span className="font-serif font-bold text-[#d4af37] block group-hover:translate-x-1 transition-transform">
+                      The Garden
+                    </span>
+                    <span className="text-xs text-gray-400 block mt-0.5">School bio-intensive stewardship</span>
+                  </Link>
                 </div>
 
                 <p className="text-xs text-gray-400 italic pt-1">
-                  Click any of the pillars above to view dedicated activity archives, high-resolution galleries, and documentary reflections.
+                  Click any card to open pillar archives, culminating milestones, preparation and graduation notes, assisting-student roles, garden stewardship, and galleries.
                 </p>
               </div>
 

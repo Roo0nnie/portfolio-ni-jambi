@@ -4,30 +4,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import { HeroBanner } from "@/components/ui/HeroBanner";
 import { GalleryGrid, GalleryItem } from "@/components/gallery/GalleryGrid";
-import { Users, Heart, MessageSquare } from "lucide-react";
+import { Users, Heart, HeartHandshake, Award, Calendar, MapPin } from "lucide-react";
 
 export default function MakaTaoPage() {
-  const eventCards = [
-    {
-      title: "Diagnostic Reading Protocols",
-      target: "Gubat Elementary Pupils",
-      desc: "Conducted individualized basic reading diagnostic sessions to gauge instructional levels and design tailor-fit modules.",
-      stats: "45 Pupils Guided",
-    },
-    {
-      title: "Parent-Teacher Dialogue Sessions",
-      target: "Community Stakeholders",
-      desc: "Engaged parents in supportive conversations emphasizing home-based literacy reinforcement and academic follow-up.",
-      stats: "100% Attendance Rate",
-    },
-    {
-      title: "Peer Tutoring Circles",
-      target: "BEd Social Studies Freshmen",
-      desc: "Organized cooperative learning loops where advanced learners facilitate interactive review sessions for standard courses.",
-      stats: "Weekly Review Cycles",
-    },
-  ];
-
   const galleryItems: GalleryItem[] = [
     {
       id: "mt-gal-1",
@@ -76,52 +55,59 @@ export default function MakaTaoPage() {
           </p>
         </motion.section>
 
-        {/* Sliding / Expanding Event Cards */}
         <section className="mb-20">
-          <div className="text-center mb-10">
+          <div className="text-center max-w-xl mx-auto mb-12">
             <span className="text-xs font-bold uppercase tracking-widest text-[#7b1113] dark:text-[#d4af37] block mb-2">
-              Field Realities
+              Immersion Highlights
             </span>
-            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
-              Student Participation Initiatives
+            <h3 className="font-serif text-3xl font-bold text-gray-900 dark:text-white flex items-center justify-center gap-2">
+              <HeartHandshake className="w-6 h-6 text-[#7b1113] dark:text-[#d4af37]" />
+              <span>Maka-Tao Immersion</span>
             </h3>
-            <div className="w-12 h-1 bg-[#d4af37] mx-auto mt-3 rounded-full" />
+            <div className="w-12 h-1 bg-[#7b1113] dark:bg-[#d4af37] mx-auto mt-3 rounded-full" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {eventCards.map((card, idx) => (
-              <motion.div
-                key={card.title}
-                initial={{ opacity: 0, x: idx % 2 === 0 ? -30 : 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: idx * 0.15 }}
-                whileHover={{ scale: 1.03 }}
-                className="bg-white dark:bg-[#1a1515] rounded-xl p-6 border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group relative overflow-hidden"
-              >
-                <div className="absolute top-0 right-0 w-2 h-full bg-[#7b1113] dark:bg-[#d4af37] transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300" />
-                
-                <div>
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-[#d4af37] block mb-1">
-                    Target: {card.target}
-                  </span>
-                  <h4 className="font-serif font-bold text-lg text-gray-900 dark:text-white mb-2 group-hover:text-[#7b1113] dark:group-hover:text-[#d4af37] transition-colors">
-                    {card.title}
-                  </h4>
-                  <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 leading-relaxed font-sans mb-4">
-                    {card.desc}
-                  </p>
-                </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="bg-white dark:bg-[#1a1515] rounded-3xl border border-gray-100 dark:border-gray-800 shadow-xl overflow-hidden"
+          >
+            <div className="bg-gradient-to-r from-[#580a0b] to-[#7b1113] text-white p-6 sm:px-10 flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[#d4af37]/30">
+              <div className="space-y-1">
+                <span className="text-[10px] text-[#f3e5ab] font-mono tracking-widest uppercase block">
+                  Project Implementation
+                </span>
+                <h4 className="font-serif text-lg font-bold tracking-wide">
+                  Made to Aspire Kabataan in Adhering to the Filipino Core Values (M.A.K.A)
+                </h4>
+              </div>
 
-                <div className="pt-3 border-t border-gray-50 dark:border-gray-800 flex items-center justify-between">
-                  <span className="text-xs font-semibold text-[#7b1113] dark:text-[#f3e5ab]">
-                    {card.stats}
-                  </span>
-                  <MessageSquare className="w-4 h-4 text-gray-300 dark:text-gray-600 group-hover:text-[#d4af37] transition-colors" />
+              <div className="flex flex-wrap items-center gap-4 text-xs bg-black/20 p-2.5 rounded-xl backdrop-blur-xs border border-white/10">
+                <div className="flex items-center gap-1.5 text-white/90">
+                  <Award className="w-3.5 h-3.5 text-[#f3e5ab]" />
+                  <span><strong>What:</strong> Maka-Tao</span>
                 </div>
-              </motion.div>
-            ))}
-          </div>
+                <div className="flex items-center gap-1.5 text-white/90">
+                  <Calendar className="w-3.5 h-3.5 text-[#f3e5ab]" />
+                  <span><strong>When:</strong> March 12, 2026</span>
+                </div>
+                <div className="flex items-center gap-1.5 text-white/90">
+                  <MapPin className="w-3.5 h-3.5 text-[#f3e5ab]" />
+                  <span><strong>Where:</strong> Bulacao National High School</span>
+                </div>
+              </div>
+            </div>
+            <div className="p-6 sm:p-10 space-y-8">
+              <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed font-sans">
+                During the 3rd day of our immersion, the Maka tao team was tasked to discuss about the concept of being a Maka-tao, which means honoring the dignity and worth of every person. The team also discussed about the attitude that each and everyone must possess, such as respect, empathy, fairness, and understanding towards other, so through the activities and discussion conducted, the students were encouraged to appreciate  the importance of treating people equally despite of their differences. It also highlighted how simple acts of kindness can create a positive environment within the school and community.
+              </p>
+              <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed font-sans">
+                In addition, student and facilitators gather a valuable information as it reflect to their own actions and behavior towards other people. So as a future educator, this experience became a realization that teaching values is just as important as teaching academic lessons, because values shape students into responsible and compassionate individuals. The activity also strengthened the understanding that building good relationship with others can promote unity within the community.
+              </p>
+            </div>
+          </motion.div>
         </section>
 
         {/* Gallery Showcase Section */}

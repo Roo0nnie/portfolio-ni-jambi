@@ -1,32 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 import { HeroBanner } from "@/components/ui/HeroBanner";
 import { GalleryGrid, GalleryItem } from "@/components/gallery/GalleryGrid";
-import { Flag, ShieldCheck, Landmark, CheckSquare, ChevronRight } from "lucide-react";
+import { Flag, Landmark, Award, Calendar, MapPin } from "lucide-react";
 
 export default function MakaBansaPage() {
-  const [activeTab, setActiveTab] = useState<"identity" | "citizenship" | "leadership">("identity");
-
-  const tabContents = {
-    identity: {
-      title: "Promoting Local Heritage & Flag Honor",
-      desc: "Integrated structured curriculum review sessions focusing on significant Philippine historical milestones, regional Bicolano contributions, and deep respect for the national flag symbolisms.",
-      action: "Conducted flag ceremonies and civic singing protocols inside our adopted elementary districts.",
-    },
-    citizenship: {
-      title: "Civic Literacy & Voting Education Awareness",
-      desc: "Designed specialized teaching modules tailored for adult literacy programs, preparing community stakeholders for active participatory governance and informed regional representation.",
-      action: "Facilitated mock town-hall forums emphasizing community consensus and basic human rights.",
-    },
-    leadership: {
-      title: "Youth Leadership & Community Taskforces",
-      desc: "Headed group formations ensuring systematic distribution of literacy reading kits, establishing reliable communication channels with Local Government Unit representatives in Gubat.",
-      action: "Mentored aspiring young students to adopt proactive task leadership during community immersion schedules.",
-    },
-  };
-
   const galleryItems: GalleryItem[] = [
     {
       id: "mb-gal-1",
@@ -77,132 +57,56 @@ export default function MakaBansaPage() {
           </p>
         </motion.section>
 
-        {/* Interactive Tabbed Sections */}
         <section className="mb-20">
-          <div className="text-center mb-10">
+          <div className="text-center max-w-xl mx-auto mb-12">
             <span className="text-xs font-bold uppercase tracking-widest text-[#7b1113] dark:text-[#d4af37] block mb-2">
-              Strategic Domains
+              Immersion Highlights
             </span>
-            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
-              Patriotic Literacy Activities
+            <h3 className="font-serif text-3xl font-bold text-gray-900 dark:text-white flex items-center justify-center gap-2">
+              <Flag className="w-6 h-6 text-[#7b1113] dark:text-[#d4af37]" />
+              <span>Maka-Bansa Immersion</span>
             </h3>
-            <div className="w-12 h-1 bg-[#d4af37] mx-auto mt-3 rounded-full" />
+            <div className="w-12 h-1 bg-[#7b1113] dark:bg-[#d4af37] mx-auto mt-3 rounded-full" />
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            
-            {/* Tab controls */}
-            <div className="lg:col-span-4 flex flex-col gap-3">
-              <button
-                id="tab-btn-identity"
-                onClick={() => setActiveTab("identity")}
-                className={`w-full text-left p-4 rounded-xl border transition-all flex items-center justify-between ${
-                  activeTab === "identity"
-                    ? "bg-[#7b1113] text-white border-[#7b1113] shadow-md font-semibold"
-                    : "bg-white dark:bg-[#1a1515] text-gray-700 dark:text-gray-300 border-gray-100 dark:border-gray-800 hover:border-[#d4af37]"
-                }`}
-              >
-                <div className="flex items-center gap-3">
-                  <Flag className={`w-5 h-5 ${activeTab === "identity" ? "text-[#f3e5ab]" : "text-[#7b1113] dark:text-[#d4af37]"}`} />
-                  <span className="text-sm sm:text-base font-serif">National Identity</span>
-                </div>
-                <ChevronRight className={`w-4 h-4 transition-transform ${activeTab === "identity" ? "rotate-90" : ""}`} />
-              </button>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="bg-white dark:bg-[#1a1515] rounded-3xl border border-gray-100 dark:border-gray-800 shadow-xl overflow-hidden"
+          >
+            <div className="bg-gradient-to-r from-[#580a0b] to-[#7b1113] text-white p-6 sm:px-10 flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[#d4af37]/30">
+              <div className="space-y-1">
+                <span className="text-[10px] text-[#f3e5ab] font-mono tracking-widest uppercase block">
+                  Project Implementation
+                </span>
+                <h4 className="font-serif text-lg font-bold tracking-wide">
+                  Made to Aspire Kabataan in Adhering to the Filipino Core Values (M.A.K.A)
+                </h4>
+              </div>
 
-              <button
-                id="tab-btn-citizenship"
-                onClick={() => setActiveTab("citizenship")}
-                className={`w-full text-left p-4 rounded-xl border transition-all flex items-center justify-between ${
-                  activeTab === "citizenship"
-                    ? "bg-[#7b1113] text-white border-[#7b1113] shadow-md font-semibold"
-                    : "bg-white dark:bg-[#1a1515] text-gray-700 dark:text-gray-300 border-gray-100 dark:border-gray-800 hover:border-[#d4af37]"
-                }`}
-              >
-                <div className="flex items-center gap-3">
-                  <ShieldCheck className={`w-5 h-5 ${activeTab === "citizenship" ? "text-[#f3e5ab]" : "text-[#7b1113] dark:text-[#d4af37]"}`} />
-                  <span className="text-sm sm:text-base font-serif">Citizenship Awareness</span>
+              <div className="flex flex-wrap items-center gap-4 text-xs bg-black/20 p-2.5 rounded-xl backdrop-blur-xs border border-white/10">
+                <div className="flex items-center gap-1.5 text-white/90">
+                  <Award className="w-3.5 h-3.5 text-[#f3e5ab]" />
+                  <span><strong>What:</strong> Maka-Bansa</span>
                 </div>
-                <ChevronRight className={`w-4 h-4 transition-transform ${activeTab === "citizenship" ? "rotate-90" : ""}`} />
-              </button>
-
-              <button
-                id="tab-btn-leadership"
-                onClick={() => setActiveTab("leadership")}
-                className={`w-full text-left p-4 rounded-xl border transition-all flex items-center justify-between ${
-                  activeTab === "leadership"
-                    ? "bg-[#7b1113] text-white border-[#7b1113] shadow-md font-semibold"
-                    : "bg-white dark:bg-[#1a1515] text-gray-700 dark:text-gray-300 border-gray-100 dark:border-gray-800 hover:border-[#d4af37]"
-                }`}
-              >
-                <div className="flex items-center gap-3">
-                  <CheckSquare className={`w-5 h-5 ${activeTab === "leadership" ? "text-[#f3e5ab]" : "text-[#7b1113] dark:text-[#d4af37]"}`} />
-                  <span className="text-sm sm:text-base font-serif">Leadership Protocols</span>
+                <div className="flex items-center gap-1.5 text-white/90">
+                  <Calendar className="w-3.5 h-3.5 text-[#f3e5ab]" />
+                  <span><strong>When:</strong> March 26, 2026</span>
                 </div>
-                <ChevronRight className={`w-4 h-4 transition-transform ${activeTab === "leadership" ? "rotate-90" : ""}`} />
-              </button>
+                <div className="flex items-center gap-1.5 text-white/90">
+                  <MapPin className="w-3.5 h-3.5 text-[#f3e5ab]" />
+                  <span><strong>Where:</strong> Bulacao National High School</span>
+                </div>
+              </div>
             </div>
-
-            {/* Tab view portal */}
-            <div className="lg:col-span-8">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={activeTab}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -10 }}
-                  transition={{ duration: 0.3 }}
-                  className="bg-white dark:bg-[#1a1515] rounded-2xl p-6 sm:p-8 border border-gray-100 dark:border-gray-800 shadow-sm space-y-4 relative overflow-hidden"
-                >
-                  <div className="absolute top-0 left-0 w-2 h-full bg-[#d4af37]" />
-
-                  <span className="text-xs font-mono uppercase tracking-widest text-[#d4af37] block">
-                    Domain Overview
-                  </span>
-                  
-                  <h4 className="font-serif text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
-                    {tabContents[activeTab].title}
-                  </h4>
-
-                  <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed font-sans">
-                    {tabContents[activeTab].desc}
-                  </p>
-
-                  <div className="pt-4 mt-2 border-t border-gray-50 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50 p-4 rounded-xl">
-                    <span className="text-xs font-bold uppercase tracking-wider text-[#7b1113] dark:text-[#f3e5ab] block mb-1">
-                      Verified Impact Record:
-                    </span>
-                    <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-300 italic">
-                      &ldquo;{tabContents[activeTab].action}&rdquo;
-                    </p>
-                  </div>
-                </motion.div>
-              </AnimatePresence>
-            </div>
-
-          </div>
-        </section>
-
-        {/* Closing Reflection block */}
-        <section className="mb-16">
-          <div className="bg-[#580a0b] rounded-2xl p-8 sm:p-12 text-white relative overflow-hidden shadow-xl text-center max-w-4xl mx-auto space-y-6">
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,rgba(212,175,55,0.15),transparent)]" />
-            
-            <div className="relative z-10 space-y-4">
-              <span className="text-xs font-bold uppercase tracking-widest text-[#f3e5ab] block">
-                Closing Reflection
-              </span>
-
-              <h3 className="font-serif text-2xl sm:text-3xl font-bold">
-                The Educator as a Steward of National Destiny
-              </h3>
-
-              <div className="h-0.5 w-16 bg-[#d4af37] mx-auto" />
-
-              <p className="text-sm sm:text-base text-white/90 leading-relaxed max-w-2xl mx-auto font-sans">
-                Through the integration of the four pillars—Maka-Diyos, Maka-Tao, Maka-Kalikasan, and Maka-Bansa—the electronic portfolio fulfills its purpose. It demonstrates that the Literacy Training Service is not merely an institutional requirement but a profound national service designed to light the spark of collective civic aspiration across Sorsogon and beyond.
+            <div className="p-6 sm:p-10 space-y-8">
+              <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed font-sans">
+                During the 5th day of the Immersion, the MAKA-Bansa team conducted an informative and Interactive discussions that broadened the students understanding when it comes to the history, governance, Heraldic code, economics, and other information related to our country. This session covered significant topics about our country that made students looks curious, engage, and eager to participate in the discussion. Students are becoming more aware on the importance of respecting the  country&apos;s identity, culture, and sovereignty which enhanced their sense of patriotism, nationalism, and responsibility as future citizens of the nation. So as one of the facilitators, this experienced brought a realization that as a citizens of our country, we must use our voice to raise concerns, promote unity, and encourage other to be a responsible individuals.
               </p>
             </div>
-          </div>
+          </motion.div>
         </section>
 
         {/* Gallery Section */}

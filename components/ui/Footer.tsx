@@ -123,6 +123,26 @@ export function Footer() {
                   Kick Off Event
                 </Link>
               </li>
+              <li>
+                <Link id="footer-link-culminating" href="/culminating" className="hover:text-[#d4af37] transition-colors">
+                  Culminating
+                </Link>
+              </li>
+              <li>
+                <Link id="footer-link-prep-grad" href="/preparation-completion-graduation" className="hover:text-[#d4af37] transition-colors">
+                  Preparation &amp; Graduation
+                </Link>
+              </li>
+              <li>
+                <Link id="footer-link-assisting-students" href="/assisting-students" className="hover:text-[#d4af37] transition-colors">
+                  Assisting Students
+                </Link>
+              </li>
+              <li>
+                <Link id="footer-link-garden" href="/garden" className="hover:text-[#d4af37] transition-colors">
+                  The Garden
+                </Link>
+              </li>
             </ul>
           </div>
 

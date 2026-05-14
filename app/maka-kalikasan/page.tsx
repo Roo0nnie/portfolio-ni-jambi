@@ -4,30 +4,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import { HeroBanner } from "@/components/ui/HeroBanner";
 import { GalleryGrid, GalleryItem } from "@/components/gallery/GalleryGrid";
-import { TreePine, Sprout, Wind, Droplets } from "lucide-react";
+import { TreePine, Sprout, HeartHandshake, Award, Calendar, MapPin } from "lucide-react";
 
 export default function MakaKalikasanPage() {
-  const activities = [
-    {
-      title: "Gubat Coastal & Watershed Cleanup Drive",
-      icon: Droplets,
-      desc: "Mobilized student teams to extract non-biodegradable debris along public coastal sectors, safeguarding local marine ecologies.",
-      metric: "120 kg Waste Cleared",
-    },
-    {
-      title: "Campus Seedling & Tree Planting Rites",
-      icon: TreePine,
-      desc: "Planted native hard-wood and fruit-bearing saplings across targeted university grounds to reinforce green carbon offsets.",
-      metric: "50+ Saplings Rooted",
-    },
-    {
-      title: "Ecological Awareness Seminars",
-      icon: Wind,
-      desc: "Designed integrated lesson plans instructing elementary pupils on zero-waste stewardship and simple recycling loops.",
-      metric: "Integrated Lesson Module",
-    },
-  ];
-
   const galleryItems: GalleryItem[] = [
     {
       id: "mk-gal-1",
@@ -84,53 +63,56 @@ export default function MakaKalikasanPage() {
           </div>
         </motion.section>
 
-        {/* Environmental Activities Cards */}
         <section className="mb-20">
-          <div className="text-center mb-10">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#1b3b22] dark:text-[#d4af37] block mb-2">
-              Civic Operations
+          <div className="text-center max-w-xl mx-auto mb-12">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#7b1113] dark:text-[#d4af37] block mb-2">
+              Immersion Highlights
             </span>
-            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
-              Key Ecological Initiatives
+            <h3 className="font-serif text-3xl font-bold text-gray-900 dark:text-white flex items-center justify-center gap-2">
+              <HeartHandshake className="w-6 h-6 text-[#7b1113] dark:text-[#d4af37]" />
+              <span>Maka-Kalikasan Immersion</span>
             </h3>
-            <div className="w-12 h-1 bg-[#d4af37] mx-auto mt-3 rounded-full" />
+            <div className="w-12 h-1 bg-[#7b1113] dark:bg-[#d4af37] mx-auto mt-3 rounded-full" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {activities.map((act, i) => {
-              const IconComponent = act.icon;
-              return (
-                <motion.div
-                  key={act.title}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: i * 0.15 }}
-                  whileHover={{ y: -5 }}
-                  className="bg-white dark:bg-[#1a1515] rounded-xl p-6 border-t-4 border-t-[#1b3b22] dark:border-t-[#d4af37] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
-                >
-                  <div>
-                    <div className="w-12 h-12 rounded-lg bg-[#1b3b22]/10 dark:bg-[#d4af37]/10 flex items-center justify-center text-[#1b3b22] dark:text-[#d4af37] mb-4">
-                      <IconComponent className="w-6 h-6" />
-                    </div>
-                    <h4 className="font-serif font-bold text-lg text-gray-900 dark:text-white mb-2">
-                      {act.title}
-                    </h4>
-                    <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 leading-relaxed font-sans">
-                      {act.desc}
-                    </p>
-                  </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="bg-white dark:bg-[#1a1515] rounded-3xl border border-gray-100 dark:border-gray-800 shadow-xl overflow-hidden"
+          >
+            <div className="bg-gradient-to-r from-[#580a0b] to-[#7b1113] text-white p-6 sm:px-10 flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[#d4af37]/30">
+              <div className="space-y-1">
+                <span className="text-[10px] text-[#f3e5ab] font-mono tracking-widest uppercase block">
+                  Project Implementation
+                </span>
+                <h4 className="font-serif text-lg font-bold tracking-wide">
+                  Made to Aspire Kabataan in Adhering to the Filipino Core Values (M.A.K.A)
+                </h4>
+              </div>
 
-                  <div className="mt-6 pt-3 border-t border-gray-50 dark:border-gray-800 flex items-center justify-between">
-                    <span className="text-xs text-gray-400 font-mono uppercase tracking-wider">Outcome</span>
-                    <span className="text-xs font-bold text-[#1b3b22] dark:text-[#f3e5ab] px-2 py-0.5 rounded bg-gray-50 dark:bg-gray-800">
-                      {act.metric}
-                    </span>
-                  </div>
-                </motion.div>
-              );
-            })}
-          </div>
+              <div className="flex flex-wrap items-center gap-4 text-xs bg-black/20 p-2.5 rounded-xl backdrop-blur-xs border border-white/10">
+                <div className="flex items-center gap-1.5 text-white/90">
+                  <Award className="w-3.5 h-3.5 text-[#f3e5ab]" />
+                  <span><strong>What:</strong> Maka-Kalikasan</span>
+                </div>
+                <div className="flex items-center gap-1.5 text-white/90">
+                  <Calendar className="w-3.5 h-3.5 text-[#f3e5ab]" />
+                  <span><strong>When:</strong> March 13, 2026</span>
+                </div>
+                <div className="flex items-center gap-1.5 text-white/90">
+                  <MapPin className="w-3.5 h-3.5 text-[#f3e5ab]" />
+                  <span><strong>Where:</strong> Bulacao National High School</span>
+                </div>
+              </div>
+            </div>
+            <div className="p-6 sm:p-10 space-y-8">
+              <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed font-sans">
+                During the 4th day of our immersion, the MAKA-Kalikasan team was tasked to discuss about protecting the environment. conserving the nature, and perform a tree planting that served as one of the actions for us to take care of our environment. During the session, the student of Bulacao National High School actively participated about environmental awareness, responsibility, and simple ways of becoming environmentally conscious Individual. The discussion also brought a realization that being a Maka-kalikasan is not just about performing an action, but it is also about being discipline, mindful, and has a genuine concerns for the environment. In addition, the garden planting activity also served as a small act in contributing to a healthy and more sustainable community, As a facilitator, I&apos;m deeply Inspired to witness the students to reflect on their responsibilities towards nature and show willingness to become part of a positive change. Through this experience, the Maka-kalikasan team serves as a role model when it comes to protecting our nature.
+              </p>
+            </div>
+          </motion.div>
         </section>
 
         {/* Gallery Section */}
