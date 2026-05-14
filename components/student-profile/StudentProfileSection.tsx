@@ -27,7 +27,10 @@ export function StudentProfileSection() {
   };
 
   return (
-    <section id="profile" className="py-24 bg-gradient-to-b from-white via-[#fdfbfb] to-[#f5f2f2] dark:from-[#0d0909] dark:to-[#151111] relative overflow-hidden">
+    <section
+      id="profile"
+      className="relative overflow-hidden bg-gradient-to-b from-[#ebe6e1] via-[#f4f0ec] to-[#e8e2dc] py-24 dark:from-[#0d0909] dark:via-[#121010] dark:to-[#151111]"
+    >
 
       {/* Decorative background vectors */}
       <div className="absolute top-1/2 right-0 w-96 h-96 bg-[#d4af37]/5 rounded-full blur-3xl -translate-y-1/2 pointer-events-none" />
@@ -48,7 +51,7 @@ export function StudentProfileSection() {
             Student Profile
             <span className="absolute bottom-0 left-1/4 right-1/4 h-1 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent" />
           </h2>
-          <p className="mt-4 text-base text-gray-600 dark:text-gray-400">
+          <p className="mt-4 text-base text-[#3d3535] dark:text-gray-300">
             Dedicated to uplifting community literacy and nurturing deep-rooted academic awareness through core values.
           </p>
         </motion.div>
@@ -65,44 +68,54 @@ export function StudentProfileSection() {
             className="lg:col-span-7 space-y-6"
           >
             {/* Main Info Card */}
-            <div className="glass-panel rounded-2xl p-6 sm:p-8 relative overflow-hidden transition-all duration-300 hover:shadow-xl">
-              <div className="absolute top-0 left-0 w-2 h-full bg-[#7b1113]" />
+            <div className="relative overflow-hidden rounded-2xl border border-[#d4af37]/40 bg-[#fdfcfa] p-6 shadow-[0_12px_40px_rgba(58,6,7,0.12)] transition-all duration-300 hover:shadow-xl dark:border-[#d4af37]/25 dark:bg-[#1a1616] dark:shadow-[0_12px_40px_rgba(0,0,0,0.5)] sm:p-8">
+              <div className="absolute top-0 left-0 h-full w-2 bg-[#7b1113]" />
 
-              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#7b1113] dark:text-[#f3e5ab]">
+              <h3 className="font-serif text-2xl font-bold text-[#3d0a0c] sm:text-3xl dark:text-white">
                 {studentData.name}
               </h3>
 
-              <div className="mt-4 space-y-3 pt-4 border-t border-gray-100 dark:border-gray-800">
+              <div className="mt-4 space-y-3 border-t border-[#e5ddd6] pt-4 dark:border-[#2a2424]">
                 <div className="flex items-start gap-3">
-                  <BookOpen className="w-5 h-5 text-[#d4af37] shrink-0 mt-0.5" />
+                  <BookOpen className="mt-0.5 h-5 w-5 shrink-0 text-[#9a7218] dark:text-[#e8c347]" />
                   <div>
-                    <span className="text-xs text-gray-400 block uppercase font-medium">Year & Course</span>
-                    <span className="text-sm sm:text-base font-medium text-gray-800 dark:text-gray-200">{studentData.course}</span>
+                    <span className="block text-xs font-semibold uppercase tracking-wide text-[#5c4038] dark:text-[#e8c347]">
+                      Year & Course
+                    </span>
+                    <span className="text-sm font-medium text-[#141010] sm:text-base dark:text-gray-100">
+                      {studentData.course}
+                    </span>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <Award className="w-5 h-5 text-[#d4af37] shrink-0 mt-0.5" />
+                  <Award className="mt-0.5 h-5 w-5 shrink-0 text-[#9a7218] dark:text-[#e8c347]" />
                   <div>
-                    <span className="text-xs text-gray-400 block uppercase font-medium">Program Assignment</span>
-                    <span className="text-sm font-medium text-gray-700 dark:text-gray-300">{studentData.nstp}</span>
+                    <span className="block text-xs font-semibold uppercase tracking-wide text-[#5c4038] dark:text-[#e8c347]">
+                      Program Assignment
+                    </span>
+                    <span className="text-sm font-medium text-[#141010] dark:text-gray-100">{studentData.nstp}</span>
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                <div className="grid grid-cols-1 gap-4 pt-2 sm:grid-cols-2">
                   <div className="flex items-start gap-3">
-                    <Users className="w-5 h-5 text-[#7b1113] dark:text-[#d4af37] shrink-0 mt-0.5" />
+                    <Users className="mt-0.5 h-5 w-5 shrink-0 text-[#7b1113] dark:text-[#e8c347]" />
                     <div>
-                      <span className="text-xs text-gray-400 block uppercase font-medium">Committee</span>
-                      <span className="text-sm font-semibold text-gray-800 dark:text-gray-200">{studentData.committee}</span>
+                      <span className="block text-xs font-semibold uppercase tracking-wide text-[#5c4038] dark:text-[#e8c347]">
+                        Committee
+                      </span>
+                      <span className="text-sm font-semibold text-[#141010] dark:text-gray-100">{studentData.committee}</span>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <Star className="w-5 h-5 text-[#7b1113] dark:text-[#d4af37] shrink-0 mt-0.5" />
+                    <Star className="mt-0.5 h-5 w-5 shrink-0 text-[#7b1113] dark:text-[#e8c347]" />
                     <div>
-                      <span className="text-xs text-gray-400 block uppercase font-medium">MAKA Group</span>
-                      <span className="text-sm font-semibold text-gray-800 dark:text-gray-200">{studentData.makaGroup}</span>
+                      <span className="block text-xs font-semibold uppercase tracking-wide text-[#5c4038] dark:text-[#e8c347]">
+                        MAKA Group
+                      </span>
+                      <span className="text-sm font-semibold text-[#141010] dark:text-gray-100">{studentData.makaGroup}</span>
                     </div>
                   </div>
                 </div>
@@ -119,16 +132,18 @@ export function StudentProfileSection() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
               {/* Contact Card */}
-              <div className="glass-panel rounded-xl p-5 border-l-4 border-l-[#d4af37] hover:-translate-y-1 transition-transform duration-300">
-                <h4 className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Contact Channels</h4>
+              <div className="rounded-xl border border-[#d4af37]/40 bg-[#fdfcfa] p-5 shadow-[0_8px_28px_rgba(58,6,7,0.1)] transition-transform duration-300 hover:-translate-y-1 dark:border-[#d4af37]/25 dark:bg-[#1a1616] dark:shadow-[0_8px_28px_rgba(0,0,0,0.45)] border-l-4 border-l-[#c9a227] dark:border-l-[#d4af37]">
+                <h4 className="mb-3 text-xs font-bold uppercase tracking-wider text-[#5c4038] dark:text-[#e8c347]">
+                  Contact Channels
+                </h4>
                 <div className="space-y-2.5">
                   <a
                     id="profile-email-link"
                     href={`mailto:${studentData.email}`}
-                    className="flex items-center gap-2 text-xs sm:text-sm text-gray-700 dark:text-gray-300 hover:text-[#7b1113] dark:hover:text-[#d4af37] transition-colors"
+                    className="flex items-center gap-2 text-xs text-[#141010] transition-colors hover:text-[#580a0b] sm:text-sm dark:text-gray-100 dark:hover:text-[#f3e5ab]"
                   >
-                    <Mail className="w-4 h-4 text-[#d4af37]" />
-                    <span className="truncate">{studentData.email}</span>
+                    <Mail className="h-4 w-4 shrink-0 text-[#9a7218] dark:text-[#e8c347]" />
+                    <span className="truncate font-medium underline-offset-2 hover:underline">{studentData.email}</span>
                   </a>
                   {/* <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-700 dark:text-gray-300">
                     <Phone className="w-4 h-4 text-[#d4af37]" />
@@ -138,15 +153,17 @@ export function StudentProfileSection() {
               </div>
 
               {/* Core Skills Summary */}
-              <div className="glass-panel rounded-xl p-5 border-l-4 border-l-[#7b1113] hover:-translate-y-1 transition-transform duration-300">
-                <h4 className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Activities Handled</h4>
+              <div className="rounded-xl border border-[#d4af37]/40 bg-[#fdfcfa] p-5 shadow-[0_8px_28px_rgba(58,6,7,0.1)] transition-transform duration-300 hover:-translate-y-1 dark:border-[#d4af37]/25 dark:bg-[#1a1616] dark:shadow-[0_8px_28px_rgba(0,0,0,0.45)] border-l-4 border-l-[#7b1113]">
+                <h4 className="mb-3 text-xs font-bold uppercase tracking-wider text-[#5c4038] dark:text-[#e8c347]">
+                  Activities Handled
+                </h4>
                 <div className="flex flex-wrap gap-1.5">
                   {studentData.skills.map((skill, index) => (
                     <span
                       key={index}
-                      className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white dark:bg-black/40 text-[11px] font-medium text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-800 shadow-2xs"
+                      className="inline-flex items-center gap-1 rounded-full border border-[#3d3535]/15 bg-[#2f2a2a] px-2.5 py-1 text-[11px] font-medium text-white dark:border-[#d4af37]/20 dark:bg-[#262121]"
                     >
-                      <CheckCircle2 className="w-3 h-3 text-[#d4af37]" />
+                      <CheckCircle2 className="h-3 w-3 shrink-0 text-[#e8c347]" />
                       {skill}
                     </span>
                   ))}
@@ -203,7 +220,7 @@ export function StudentProfileSection() {
               <motion.div
                 animate={{ y: [5, -5, 5] }}
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -bottom-4 -left-4 px-3 py-1.5 rounded-lg bg-white dark:bg-black border border-[#d4af37] shadow-lg text-[11px] font-bold text-[#7b1113] dark:text-[#d4af37]"
+                className="absolute -bottom-4 -left-4 rounded-lg border border-[#d4af37] bg-white px-3 py-1.5 text-[11px] font-bold text-[#580a0b] shadow-lg dark:bg-[#1a1616] dark:text-[#f3e5ab]"
               >
                 LTS 1 Scholar
               </motion.div>

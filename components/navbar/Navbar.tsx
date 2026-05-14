@@ -2,9 +2,10 @@
 
 import React, { useState, useEffect, useRef, useMemo } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, GraduationCap, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 
 type NavLink = {
   name: string;
@@ -237,11 +238,18 @@ export function Navbar() {
           <Link
             id="navbar-brand-logo"
             href="/"
+            aria-label="M.A.K.A. E-Portfolio home"
             className="group flex min-w-0 shrink items-center gap-2 sm:gap-3"
           >
-            <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gradient-to-tr from-[#d4af37] to-[#f3e5ab] text-[#580a0b] shadow-md transition-transform duration-300 group-hover:scale-105 sm:h-10 sm:w-10">
-              <GraduationCap className="h-4 w-4 sm:h-5 sm:w-5" />
-            </div>
+            <Image
+              src="/images/logos/logo.png"
+              alt=""
+              aria-hidden
+              width={44}
+              height={44}
+              priority
+              className="h-9 w-9 shrink-0 object-contain transition-transform duration-300 group-hover:scale-105 sm:h-11 sm:w-11"
+            />
             <div className="flex min-w-0 flex-col leading-tight">
               <span className="font-serif text-base font-bold tracking-wide text-white transition-colors group-hover:text-[#f3e5ab] sm:text-lg">
                 M.A.K.A.

@@ -131,6 +131,49 @@ export default function KickoffPage() {
           </div>
         </motion.section>
 
+        {/* Kick off event video (hosted on YouTube) */}
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="space-y-8"
+        >
+          <div className="text-center max-w-xl mx-auto space-y-2">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#7b1113] dark:text-[#d4af37] block">
+              Event recording
+            </span>
+            <h3 className="font-serif text-3xl font-bold text-gray-900 dark:text-white flex items-center justify-center gap-2">
+              <Mic className="w-5 h-5 text-[#d4af37]" />
+              <span>Project kick off highlight</span>
+            </h3>
+            <div className="w-12 h-1 bg-[#d4af37] mx-auto rounded-full" />
+            <p className="text-sm text-gray-600 dark:text-gray-400 pt-2">
+              Full coverage is on{" "}
+              <a
+                href="https://youtu.be/CqZLaQNVy_Q"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#7b1113] dark:text-[#d4af37] font-semibold underline underline-offset-2 hover:opacity-90"
+              >
+                YouTube
+              </a>
+              .
+            </p>
+          </div>
+          <div className="relative w-full max-w-4xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-700 bg-black">
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/CqZLaQNVy_Q"
+              title="Project kick off at Bulacao National High School"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+            />
+          </div>
+        </motion.section>
+
         {/* Gallery Showcase Section */}
         <section className="pb-12">
           <div className="text-center max-w-xl mx-auto mb-10 space-y-2">
