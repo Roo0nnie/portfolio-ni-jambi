@@ -22,7 +22,8 @@ export function StudentProfileSection() {
       "Facilitator",
       "Preparation for the Graduation",
       "Cleaning the Gardern",
-      "Designing the Garden"
+      "Master of the Ceremony (Culminating)",
+      "Designing the Garden",
     ],
   };
 

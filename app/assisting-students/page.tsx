@@ -11,14 +11,14 @@ export default function AssistingStudentsPage() {
     {
       id: "ast-gal-1",
       src: "/images/gallery/ASSISTING-1.jpeg",
-      title: "Picture taking with them",
-      category: "Mentorship",
+      title: "",
+      category: "",
     },
     {
       id: "ast-gal-2",
       src: "/images/gallery/ASSISTING-2.jpeg",
-      title: "Picture taking with the students",
-      category: "Instruction",
+      title: "",
+      category: "",
     },
   ];
 

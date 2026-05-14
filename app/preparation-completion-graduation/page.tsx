@@ -51,7 +51,7 @@ export default function PreparationCompletionGraduationPage() {
       {/* Hero Banner */}
       <HeroBanner
         title="Preparation for Completion &amp; Graduation"
-        subtitle="Meticulously assembling final portfolio milestones, credential reviews, and institutional sign-offs."
+        subtitle=""
         imageSrc="/images/hero/preface-bg.png"
       />
 

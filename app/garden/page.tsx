@@ -11,32 +11,32 @@ export default function GardenPage() {
     {
       id: "gar-gal-1",
       src: "/images/gallery/GARDEN-1.jpg",
-      title: "Tree Planting",
-      category: "Stewardship",
+      title: "",
+      category: "",
     },
     {
       id: "gar-gal-2",
       src: "/images/gallery/GARDEN-2.jpg",
-      title: "Picture taking with the students",
-      category: "Restoration",
+      title: "",
+      category: "",
     },
     {
       id: "gar-gal-3",
       src: "/images/gallery/GARDEN-3.jpg",
-      title: "Helping each other for the garden",
-      category: "Stewardship",
+      title: "",
+      category: "",
     },
     {
       id: "gar-gal-4",
       src: "/images/gallery/GARDEN-4.jpg",
-      title: "Growing Plants",
-      category: "Restoration",
+      title: "",
+      category: "",
     },
     {
       id: "gar-gal-5",
       src: "/images/gallery/GARDEN-5.jpg",
-      title: "Cleaning the area",
-      category: "Stewardship",
+      title: "",
+      category: "",
     },
   ];
 

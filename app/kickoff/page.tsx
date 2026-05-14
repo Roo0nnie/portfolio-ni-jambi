@@ -47,37 +47,20 @@ export default function KickoffPage() {
       {/* Main Container */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 space-y-20">
 
-        {/* Enhanced Narrative Overview Block */}
-        <motion.section
+      {/* Capstone Overview Section */}
+      <motion.section
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="relative overflow-hidden bg-gradient-to-br from-white via-gray-50 to-white dark:from-[#1a1515] dark:via-[#1f1919] dark:to-[#151111] rounded-3xl p-8 sm:p-12 border border-gray-100 dark:border-gray-800 shadow-xl"
+          className="relative overflow-hidden bg-white dark:bg-[#1a1515] rounded-3xl p-8 sm:p-12 border border-gray-100 dark:border-gray-800 shadow-xl"
         >
-          {/* Subtle decorative background vector */}
-          <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#d4af37]/10 rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute bottom-0 left-1/3 w-64 h-64 bg-[#7b1113]/5 rounded-full blur-2xl pointer-events-none" />
+          <div className="absolute top-0 right-0 w-32 h-32 bg-[#d4af37]/10 rounded-bl-full pointer-events-none" />
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10">
-            {/* Title Column */}
-            <div className="lg:col-span-5 space-y-4">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#7b1113]/10 dark:bg-[#d4af37]/10 text-[#7b1113] dark:text-[#d4af37] text-xs font-bold uppercase tracking-wider">
-                <Users className="w-4 h-4" />
-                <span>Inaugural Protocol</span>
-              </div>
-              <h2 className="font-serif text-3xl sm:text-4xl font-extrabold text-gray-900 dark:text-white leading-tight">
-                Setting the Foundations for Immersion
-              </h2>
-
-              <div className="w-16 h-1.5 bg-gradient-to-r from-[#7b1113] to-[#d4af37] rounded-full mt-2" />
-            </div>
-
-            {/* Content Column */}
-            <div className="lg:col-span-7 space-y-5 text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed font-sans">
-              <p>
-                As part of the BSED Social studies 1, a lot of responsibilities were taken on the first day of immersion, from preparing the venue, providing entertainment to students, and cleaning the venue after the activity. The Kick off program conducted last February 26, 2026 at Bulacao National High School, which serves as the foundation for building closeness and cooperation to students. During this day. We are also honored by the presence of The Kindness Station (TKS) in which they've volunteer to make a creative face painting for both students and facilitators. Aside from these, we are also honored to hear some inspiring message from our beloved CSAS Coordinator, Ma'am Cristine Ann D. Laguardia, Brgy Captain of Bulacao, Sir Joseph Enconado, the school principal of Bulacao National High School, Ma'am Eleonora Polo, and our NSTP adviser, Sir Gerry F. Guardian. After delivering their messages, the students and facilitators begun to enjoy the rest of the event with a series of Interactive activities, question and answer portion, distribution of snacks and token of appreciation to express gratitude and strengthen the bond between facilitators and the participants. The event concluded with a picture taking and assembling the place.
-              </p>
-            </div>
+          <div className="relative z-10 flex flex-col gap-8 lg:gap-10">
+           
+            <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed font-sans">
+            As part of the <strong className="text-[#7b1113] dark:text-[#d4af37]">BSED Social studies 1</strong>, a lot of responsibilities were taken on the first day of immersion, from preparing the venue, providing entertainment to students, and cleaning the venue after the activity. The Kick off program conducted last <strong className="text-[#7b1113] dark:text-[#d4af37]">February 26, 2026</strong> at <strong className="text-[#7b1113] dark:text-[#d4af37]">Bulacao National High School</strong>, which serves as the foundation for building closeness and cooperation to students. During this day. We are also honored by the presence of <strong className="text-[#7b1113] dark:text-[#d4af37]">The Kindness Station (TKS)</strong> in which they've volunteer to make a creative face painting for both students and facilitators. Aside from these, we are also honored to hear some inspiring message from our beloved CSAS Coordinator, <strong className="text-[#7b1113] dark:text-[#d4af37]">Ma'am Cristine Ann D. Laguardia</strong>, Brgy Captain of Bulacao, <strong className="text-[#7b1113] dark:text-[#d4af37]">Sir Joseph Enconado</strong>, the school principal of Bulacao National High School, <strong className="text-[#7b1113] dark:text-[#d4af37]">Ma'am Eleonora Polo</strong>, and our NSTP adviser, <strong className="text-[#7b1113] dark:text-[#d4af37]">Sir Gerry F. Guardian</strong>. After delivering their messages, the students and facilitators begun to enjoy the rest of the event with a series of Interactive activities, question and answer portion, distribution of snacks and token of appreciation to express gratitude and strengthen the bond between facilitators and the participants. The event concluded with a picture taking and assembling the place.
+            </p>
           </div>
         </motion.section>
 
@@ -120,7 +103,7 @@ export default function KickoffPage() {
                   <span className="font-serif font-bold text-base tracking-wide">The Proudest Moment</span>
                 </div>
                 <p className="text-xs sm:text-sm text-white/90">
-                  As someone training to become a professional educator, hearing myself respectfully addressed as <strong className="text-white font-bold underline decoration-[#d4af37] underline-offset-4 text-base">&ldquo;Ma&apos;am Michelle&rdquo;</strong> for the very first time by the learners filled my heart with profound pride and cemented my lifelong inspiration to pursue the noble art of teaching.
+                As someone becoming an educator, hearing myself respectfully addressed <strong className="text-white font-bold underline decoration-[#d4af37] underline-offset-4 text-base">&ldquo;Ma&apos;am Michelle&rdquo;</strong>  for the very first time by the learners  made my heart proud and inspired of pursuing the path of teaching.
                 </p>
               </div>
 
